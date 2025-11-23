@@ -34,12 +34,13 @@ function Banner() {
             <p>Hi, I’m Abhay!</p>
             <div className="home-banner-scroll-text">
               <h1>
-                I Design <br className="mobile"/>  Stunning <span>{words[currentWordIndex]}</span>
+                I Design <br className="mobile" /> Stunning{" "}
+                <span>{words[currentWordIndex]}</span>
               </h1>
             </div>
           </section>
           <p>
-            A Junior UX Designer currently working in <br /> Koios Studios
+            UX/UI & Visual Designer currently working in <br /> Koios Studios
             Bengaluru, India
           </p>
         </div>

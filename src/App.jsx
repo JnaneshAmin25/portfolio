@@ -19,6 +19,7 @@ import Youtube from "./components/Projects/Pages/Youtube";
 import Coolzee from "./components/Projects/Pages/Coolzee";
 import UrbanMonkey from "./components/Projects/Pages/UrbanMonkey";
 import OlliePets from "./components/Projects/Pages/OlliePets";
+import SaveLife from "./components/Projects/Pages/SaveLife";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
             <Route path="projects/coolzee" element={<Coolzee />} />
             <Route path="projects/urban_monkey" element={<UrbanMonkey />} />
             <Route path="projects/ollie_pets" element={<OlliePets />} />
+            <Route path="projects/save_life" element={<SaveLife />} />
             <Route path="contact" element={<Contact />} />
             <Route path="*" element={<Home />} />
           </Route>

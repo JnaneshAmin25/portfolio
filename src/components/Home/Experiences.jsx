@@ -8,11 +8,11 @@ function Experiences() {
       <img className="experiences-background desktop" src={DesktopBackground} />
       <img className="experiences-background mobile " src={MobileBackground} />
       <p>
-        UX Designer with over a year of experience turning user problems
-        <br className="desktop" />
-        into intuitive solutions, crafting seamless experiences{" "}
-        <br className="desktop" /> for multiple clients across diverse
-        industries.
+        I’m a hands-on UX/UI designer who turns ideas into clear, functional,
+        and delightful products. Over the years, I’ve worked across diverse
+        industries from SaaS, travel, fintech, e-commerce, AI, healthcare, and
+        more. Designing for multiple user types, devices, and interactions,
+        including micro-animations.
       </p>
     </div>
   );

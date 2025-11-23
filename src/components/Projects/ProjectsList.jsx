@@ -48,6 +48,19 @@ function Projects() {
         </div>
       </div>
       <div className="projects-container">
+        <Link className="projects-set" to="/projects/save_life">
+          <div className="projects-set-img">
+            <img src={SchoolMate} className="main-img" />
+            <img src={SchoolMateGlow} className="glow-img" />
+          </div>
+          <div className="projects-set-text">
+            <p>Mobile Application</p>
+            <section>
+              <h3>Save Life</h3>
+              <sub>2025</sub>
+            </section>
+          </div>
+        </Link>
         <Link className="projects-set" to="/projects/school_mate">
           <div className="projects-set-img">
             <img src={SchoolMate} className="main-img" />
