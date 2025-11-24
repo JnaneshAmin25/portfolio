@@ -26,6 +26,8 @@ import UrbanMonkey from "../../assets/Projects/ProjectsList/Urban Monkey.png";
 import UrbanMonkeyBackgroundGlow from "../../assets/Projects/ProjectsList/Urban Monkey Background Glow.png";
 import Coolzee from "../../assets/Projects/ProjectsList/Coolzee.png";
 import CoolzeeBackgroundGlow from "../../assets/Projects/ProjectsList/Coolzee Background Glow.png";
+import SaveLife from "../../assets/Projects/ProjectsList/Save Life.png";
+import SaveLifeBackgroundGlow from "../../assets/Projects/ProjectsList/Save Life Background Glow.png";
 
 function Projects() {
   return (
@@ -50,8 +52,8 @@ function Projects() {
       <div className="projects-container">
         <Link className="projects-set" to="/projects/save_life">
           <div className="projects-set-img">
-            <img src={SchoolMate} className="main-img" />
-            <img src={SchoolMateGlow} className="glow-img" />
+            <img src={SaveLife} className="main-img" />
+            <img src={SaveLifeBackgroundGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
             <p>Mobile Application</p>
