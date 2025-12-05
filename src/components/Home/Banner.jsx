@@ -1,48 +1,26 @@
-import React, { useState, useEffect } from "react";
-import DesktopBackground from "../../assets/Home/Banner/Desktop Banner Background.png";
-import MobileBackground from "../../assets/Home/Banner/Mobile Banner Background.png";
+import { Link } from "react-router-dom";
+import BackgroundLines from "../../assets/Home/Banner/BackgrounLines.webp"
+import BackgroundStars from "../../assets/Home/Banner/BackgroundStars.webp"
 import OpenToWork from "../OpenToWork";
+import ArrowForward from "../../assets/Home/Banner/arrow-forward.svg"
 
 function Banner() {
-  const words = ["Websites", "Applications", "Responsive", "Interfaces"];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="home-banner">
-      <img
-        className="home-banner-background desktop"
-        src={DesktopBackground}
-        alt="Background"
-      />
-      <img
-        className="home-banner-background mobile"
-        src={MobileBackground}
-        alt="Background"
-      />
+      <img className="home-banner-background-stars" src={BackgroundStars} alt="Background" />
+      <img className="home-banner-background desktop" src={BackgroundLines} alt="Background" />
+      <img className="home-banner-background mobile" src={BackgroundLines} alt="Background" />
+      <div className="home-banner-background blur-background"></div>
       <div className="home-banner-container">
         <OpenToWork />
         <div className="home-banner-container-main">
           <section>
-            <p>Hi, I’m Abhay!</p>
             <div className="home-banner-scroll-text">
-              <h1>
-                I Design <br className="mobile" /> Stunning{" "}
-                <span>{words[currentWordIndex]}</span>
-              </h1>
+              <h1> Where Research & Design <br /> Create Impact. </h1>
             </div>
+            <p>UX/UI & Visual Designer focused on turning complex challenges into simple, impactful experiences.</p>
           </section>
-          <p>
-            UX/UI & Visual Designer currently working in <br /> Koios Studios
-            Bengaluru, India
-          </p>
+          <Link to="projects" className="case-btn"> view case studies <img src={ArrowForward} alt="arrow"/> </Link>
         </div>
       </div>
     </div>

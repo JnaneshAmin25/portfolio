@@ -6,6 +6,10 @@ import Experiences from "./Home/Experiences";
 import Projects from "./Home/Projects";
 import Glimpse from "./Home/Glimpse";
 import Story from "./Home/Story";
+import Industries from "./Home/Industries";
+import OtherProjects from "./Home/OtherProjects";
+import Skills from "./Home/Skills";
+import Loop from "../components/Home/Loop"
 
 function Home() {
   return (
@@ -18,9 +22,13 @@ function Home() {
         />
       </Helmet>
       <Banner />
+      <Industries />
+      <Projects />
       <Marquee />
       <Experiences />
-      <Projects />
+      <OtherProjects />
+      <Skills />
+      <Loop />
       <Glimpse />
       <Story />
     </>

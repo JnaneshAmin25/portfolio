@@ -14,6 +14,7 @@ import OlliePets from "../../assets/Home/Projects/Ollie Pets.png";
 import OlliePetsBackgroundGlow from "../../assets/Home/Projects/Ollie Pets Background Glow.png";
 import AarogyaGuru from "../../assets/Home/Projects/Aarogya Guru.png";
 import AarogyaGuruBackgroundGlow from "../../assets/Home/Projects/Aarogya Guru Background Glow.png";
+import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png"
 
 function Projects() {
   return (
@@ -21,14 +22,14 @@ function Projects() {
       <div className="projects-heading">
         <img
           className="projects-heading-background desktop"
-          src={DesktopBackground}
+          src={DesktopBackgrnd}
         />
         <img
           className="projects-heading-background mobile"
           src={MobileBackground}
         />
         <div className="projects-heading-text">
-          <h2>Recent Projects</h2>
+          <h2>Recent Case Studies</h2>
           <p>
             Creating stunning, user-centric websites <br className="mobile" />{" "}
             that inspire and <br className="desktop" /> engage.
