@@ -3,6 +3,8 @@ import Banner from "./Projects/Banner";
 import Marquee from "./Home/Marquee";
 import ProjectsList from "./Projects/ProjectsList";
 import { Helmet } from "react-helmet-async";
+import OtherProjects from "./Home/OtherProjects";
+import Story from "./Home/Story";
 
 function Projects() {
   return (
@@ -17,6 +19,8 @@ function Projects() {
       <Banner />
       <Marquee />
       <ProjectsList />
+      <OtherProjects />
+      <Story />
     </>
   );
 }

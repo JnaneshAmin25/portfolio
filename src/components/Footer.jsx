@@ -1,27 +1,39 @@
 import React from "react";
-import DesktopBackground from "../assets/Footer/Desktop Background.png";
-import MobileBackground from "../assets/Footer/Mobile Background.png";
+import ArrowForward from "../assets/Home/Banner/arrow-forward.svg"
+import BackgroundLines from "../assets/Home/Banner/BackgrounLines.webp"
+import { Link } from "react-router-dom";
+import FooterStars from "../assets/Footer/FooterStars.webp"
+import FooterTopBlur from "../assets/Footer/FooterTopBlur.webp"
 
 function Footer() {
   return (
-    <footer>
-      <img
-        className="footer-background desktop"
-        src={DesktopBackground}
-        alt="Background"
-      />
-      <img
-        className="footer-background mobile"
-        src={MobileBackground}
-        alt="Background"
-      />
-      <div className="footer-container">
-        <section>
-          <h2>
-            Let’s <br /> <span>Collaborate</span>
-          </h2>
-          <nav>
-            <a
+    <footer className="footer">
+      <img className="footer-gridlines desktop" src={BackgroundLines} alt="Background" />
+      <img className="footer-gridlines mobile" src={BackgroundLines} alt="Background" />
+      <img className="home-banner-background-stars" src={FooterStars} alt="Background" />
+      <div className="footer-bg">
+        {/* <div className="footer-bg-blur" /> */}
+        <img className="footer-bg-blur" src={FooterTopBlur} alt="Background" />
+      </div>
+      <div className="footer-black-circle">
+        <div className="black-circle"></div>
+      </div>
+      <div className="white-bg-blur">
+        <div className="white-ellips"></div>
+      </div>
+      <h1 className="footer-heading">
+        Got ideas?
+        <br />Let’s turn them into products.
+      </h1>
+
+      <p className="footer-tagline">
+        Bringing research, UX, and visual craft to make your product stand out.
+      </p>
+
+      <Link to="contact" className="case-btn"> Let's Talk <img src={ArrowForward} alt="arrow"/> </Link>
+
+      <div className="footer-socials">
+        <a
               target="_blank"
               href="https://mail.google.com/mail/?view=cm&to=abhaynk0307@gmail.com"
             >
@@ -97,11 +109,10 @@ function Footer() {
                 />
               </svg>
             </a>
-          </nav>
-        </section>
-        <div className="fooer-line"></div>
-        <p>© Abhay Nayak 2025</p>
+
       </div>
+
+      <p className="footer-credit">© Abhay Nayak 2025</p>
     </footer>
   );
 }

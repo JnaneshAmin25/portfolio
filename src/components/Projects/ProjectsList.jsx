@@ -28,23 +28,21 @@ import Coolzee from "../../assets/Projects/ProjectsList/Coolzee.png";
 import CoolzeeBackgroundGlow from "../../assets/Projects/ProjectsList/Coolzee Background Glow.png";
 import SaveLife from "../../assets/Projects/ProjectsList/Save Life.png";
 import SaveLifeBackgroundGlow from "../../assets/Projects/ProjectsList/Save Life Background Glow.png";
+import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png"
 
 function Projects() {
   return (
     <div className="projects">
       <div className="projects-heading">
-        <img
-          className="projects-heading-background desktop"
-          src={DesktopBackground}
-        />
+        <img className="projects-heading-background desktop" src={DesktopBackgrnd}/>
         <img
           className="projects-heading-background mobile"
           src={MobileBackground}
         />
         <div className="projects-heading-text">
-          <h2>All Projects</h2>
+          <h2>Recent Case Studies</h2>
           <p>
-            We create stunning, user-centric websites <br className="mobile" />{" "}
+            Creating stunning, user-centric websites <br className="mobile" />{" "}
             that inspire and <br className="desktop" /> engage.
           </p>
         </div>

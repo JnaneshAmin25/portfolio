@@ -40,7 +40,6 @@ const Loop = () => {
         </p>
 
         <img src={slides[index].img} className="carousel-img" alt="slide" />
-
         <div className="title-row">
           <button onClick={prevSlide} className="arrow-btn small-btn">
               <img src={ArrowBackward} alt="" />
