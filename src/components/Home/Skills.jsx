@@ -42,7 +42,9 @@ const Skills = () => {
         <div className="industries-list">
           {uxSkills.map((item, idx) => (
             <div key={idx} className="industry-item">
+              <div className="top-orange-blur"></div>
               {item}
+              <div className="bottom-purple-blur"></div>
             </div>
           ))}
         </div>
@@ -54,7 +56,9 @@ const Skills = () => {
         <div className="industries-list">
           {uiSkills.map((item, idx) => (
             <div key={idx} className="industry-item">
+              <div className="top-orange-blur"></div>
               {item}
+              <div className="bottom-purple-blur"></div>
             </div>
           ))}
         </div>

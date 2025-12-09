@@ -34,7 +34,7 @@ function Navbar() {
           <a href={Resume} target="_blank" className="primary-button">
             Resume
           </a>
-          <Link to="/contact" className="secondary-button">
+          <Link to="/contact" className="case-btn">
             Contact
           </Link>
         </nav>

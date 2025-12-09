@@ -8,7 +8,6 @@ import GoogleClassroom from "../../assets/Contact/Marquee/Google Classroom.png";
 import Ollie from "../../assets/Contact/Marquee/Ollie.png";
 import Whatsapp from "../../assets/Contact/Marquee/Whatsapp.png";
 import KITE from "../../assets/Contact/Marquee/KITE.png";
-import Cricbuzz from "../../assets/Contact/Marquee/Cricbuzz.png";
 import URBANMoneky from "../../assets/Contact/Marquee/URBAN Moneky.png";
 import Youtube from "../../assets/Contact/Marquee/Youtube.png";
 

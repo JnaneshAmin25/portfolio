@@ -1,48 +1,27 @@
-import React, { useState, useEffect } from "react";
-import DesktopBackground from "../../assets/Contact/Banner/Desktop Banner Background.png";
-import MobileBackground from "../../assets/Contact/Banner/Mobile Banner Background.png";
+import BackgroundLines from "../../assets/Home/Banner/BackgrounLines.webp"
+import BackgroundStars from "../../assets/Home/Banner/BackgroundStars.webp"
 import OpenToWork from "../OpenToWork";
+import BannerBackground from "../../assets/Home/Banner/BannerBackground.webp"
 
 function Banner() {
-  const words = ["Create", "Innovate", "Design", "Elevate"];
-  const [currentWordIndex, setCurrentWordIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
+ 
 
   return (
-    <div className="home-banner project-banner">
-      <img
-        className="home-banner-background desktop"
-        src={DesktopBackground}
-        alt="Background"
-      />
-      <img
-        className="home-banner-background mobile"
-        src={MobileBackground}
-        alt="Background"
-      />
+    <div className="home-banner">
+      <img className="home-banner-background-stars" src={BackgroundStars} alt="Background" />
+      <img className="home-banner-background desktop" src={BackgroundLines} alt="Background" />
+      <img className="home-banner-background mobile" src={BackgroundLines} alt="Background" />
+      <img className="blur-background" src={BannerBackground} alt ="Banner Blur Background " />
       <div className="home-banner-container">
         <OpenToWork />
         <div className="home-banner-container-main">
           <section>
-            <p>Contact</p>
             <div className="home-banner-scroll-text">
-              <h1>
-                Lets <br className="mobile" /> Connect &
-                <span>{words[currentWordIndex]}</span>
-              </h1>
+              <h1> You Next Designer <br /> Awaits </h1>
             </div>
+            <p>Work grounded in insight, guided by process, and elevated through design.</p>
           </section>
-          <p>
-            Got an idea? Reach out, and let’s bring your vision to life with{" "}
-            <br className="desktop" /> creativity and purpose.
-          </p>
+          {/* <Link to="projects" className="case-btn"> view case studies <img src={ArrowForward} alt="arrow"/> </Link> */}
         </div>
       </div>
     </div>

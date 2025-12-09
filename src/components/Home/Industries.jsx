@@ -33,7 +33,11 @@ const Industries = () => {
 
       <div className="industries-list">
         {industries.map((item, idx) => (
-          <div key={idx} className="industry-item">{item}</div>
+          <div key={idx} className="industry-item">
+            <div className="top-orange-blur"></div>
+              {item}
+              <div className="bottom-purple-blur"></div>
+          </div>
         ))}
       </div>
     </div>

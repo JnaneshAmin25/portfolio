@@ -1,4 +1,7 @@
 .industries-wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   font-family: Raleway, sans-serif;
@@ -50,7 +53,6 @@
   cursor: pointer;
   position: relative;
   transition: 0.35s ease;
-  overflow: hidden;
 }
 
 .industry-item::before {
@@ -58,8 +60,8 @@
   position: absolute;
   inset: 0;
   border-radius: 12px;
-  padding: 1px;
-  background: linear-gradient(135deg, #EA4D13, transparent 40%, transparent 60%, #9627C8);
+  padding: 0.6px;
+  background: linear-gradient(135deg, #EA4D13, transparent 30%, transparent 60%, #9627C8);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -81,8 +83,43 @@
 
 .industry-item:hover::before {
   opacity: 1;
-  filter: drop-shadow(0px 0px 8px rgba(234, 77, 19, 0.45)) 
-          drop-shadow(0px 0px 8px rgba(150, 39, 200, 0.45));
+  
+}
+
+.industry-item:hover .top-orange-blur {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.industry-item:hover .bottom-purple-blur {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.top-orange-blur {
+  position: absolute;
+  top: 7px;
+  left: -9px;
+  rotate: 145deg;
+  width: 36px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #EA4D13;
+  filter: blur(20px);
+  opacity: 0;
+}
+
+.bottom-purple-blur {
+  position: absolute;
+  bottom: 7px;
+  right: -9px;
+  rotate: 125deg;
+  width: 35px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #9627C8;
+  filter: blur(20px);
+  opacity: 0;
 }
 
 

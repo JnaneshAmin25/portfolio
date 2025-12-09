@@ -23,7 +23,7 @@ const OtherProjects = () => {
   };
 
   return (
-    <div className="projects">
+    <div className="other-projects">
       <img className="home-banner-background-stars" src={SkillStarBackground} alt="Background" />
       <div className="projects-heading">
         <img
@@ -50,7 +50,7 @@ const OtherProjects = () => {
           <img src={ArrowFwd} alt="Next" />
         </button>
         <div className="showcase-carousel" id="carousel">
-          <div style={{ minWidth: "250px" }}></div>
+          <div style={{ minWidth: "400px" }}></div>
           <Link className="showcase-card" to="/projects/school_mate">
             <div className="showcase-img">
               <img src={SchoolMate} className="main-img" />
