@@ -175,6 +175,15 @@ header nav {
   z-index: -1;
 }
 
+.home-banner-background-mob {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+
 .blur-background{
   position: absolute;
   top: 50%;
@@ -284,6 +293,7 @@ header nav {
   font-weight: 300;
   line-height: normal;
   letter-spacing: -4%;
+  z-index: 10;
 }
 
 .home-banner-scroll-text {
@@ -723,6 +733,15 @@ header nav {
 }
 
 @media (max-width: 1000px) {
+
+  .home-banner-background-mob {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
   .projects {
     padding: 50px 0;
   }
@@ -3431,6 +3450,7 @@ footer.footer {
   }
   .home-banner-container-main section {
     gap: 15px;
+    padding: 0 20px;
   }
 
   .home-banner-container-main section p {

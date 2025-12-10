@@ -1,5 +1,6 @@
 
 import BackgroundLines from "../../assets/Home/Banner/BackgrounLines.webp"
+import MobileBackgroundLines from "../../assets/Home/Banner/MobileBackgroundLines.webp"
 import BackgroundStars from "../../assets/Home/Banner/BackgroundStars.webp"
 import OpenToWork from "../OpenToWork";
 import BannerBackground from "../../assets/Home/Banner/BannerBackground.webp"
@@ -12,7 +13,7 @@ function Banner() {
     <div className="home-banner">
       <img className="home-banner-background-stars" src={BackgroundStars} alt="Background" />
       <img className="home-banner-background desktop" src={BackgroundLines} alt="Background" />
-      <img className="home-banner-background mobile" src={BackgroundLines} alt="Background" />
+      <img className="home-banner-background-mob mobile" src={MobileBackgroundLines} alt="Background" />
       <img className="blur-background" src={BannerBackground} alt ="Banner Blur Background " />
       <div className="home-banner-container">
         <OpenToWork />
