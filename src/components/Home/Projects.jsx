@@ -15,6 +15,7 @@ import OlliePetsBackgroundGlow from "../../assets/Home/Projects/Ollie Pets Backg
 import AarogyaGuru from "../../assets/Home/Projects/Aarogya Guru.png";
 import AarogyaGuruBackgroundGlow from "../../assets/Home/Projects/Aarogya Guru Background Glow.png";
 import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png"
+import MobileBackgrnd from "../../assets/Home/Projects/MobileBackground.webp"
 
 function Projects() {
   return (
@@ -26,10 +27,10 @@ function Projects() {
         />
         <img
           className="projects-heading-background mobile"
-          src={MobileBackground}
+          src={MobileBackgrnd}
         />
         <div className="projects-heading-text">
-          <h2>Recent Case Studies</h2>
+          <h2>Recent <br className="mobile"/> Case Studies</h2>
           <p>
             Creating stunning, user-centric websites <br className="mobile" />{" "}
             that inspire and <br className="desktop" /> engage.

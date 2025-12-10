@@ -12,8 +12,11 @@ function Footer() {
       <img className="footer-gridlines mobile" src={BackgroundLines} alt="Background" />
       <img className="home-banner-background-stars" src={FooterStars} alt="Background" />
       <div className="footer-bg">
-        {/* <div className="footer-bg-blur" /> */}
-        <img className="footer-bg-blur" src={FooterTopBlur} alt="Background" />
+        <div className="footer-bg-blur" />
+        {/* <img className="footer-bg-blur" src={FooterTopBlur} alt="Background" /> */}
+      </div>
+      <div className="footer-bg">
+        <div className="footer-bg-blur-blue" />
       </div>
       <div className="footer-black-circle">
         <div className="black-circle"></div>

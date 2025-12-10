@@ -20,7 +20,7 @@ function Banner() {
             </div>
             <p>UX/UI & Visual Designer focused on turning complex challenges into simple, impactful experiences.</p>
           </section>
-          <Link to="projects" className="case-btn"> View Case Studies <img src={ArrowForward} alt="arrow"/> </Link>
+          <Link to="projects" className="home-case-btn"> View Case Studies <img src={ArrowForward} alt="arrow"/> </Link>
         </div>
       </div>
     </div>

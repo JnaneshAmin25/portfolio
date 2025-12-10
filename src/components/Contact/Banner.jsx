@@ -2,6 +2,8 @@ import BackgroundLines from "../../assets/Home/Banner/BackgrounLines.webp"
 import BackgroundStars from "../../assets/Home/Banner/BackgroundStars.webp"
 import OpenToWork from "../OpenToWork";
 import BannerBackground from "../../assets/Home/Banner/BannerBackground.webp"
+import ArrowForward from "../../assets/Home/Banner/arrow-forward.svg"
+import { Link } from "react-router-dom";
 
 function Banner() {
  
@@ -19,9 +21,9 @@ function Banner() {
             <div className="home-banner-scroll-text">
               <h1> You Next Designer <br /> Awaits </h1>
             </div>
-            <p>Work grounded in insight, guided by process, and elevated through design.</p>
+            <p>Drop a message your next project ,<br/> starts with a conversation</p>
           </section>
-          {/* <Link to="projects" className="case-btn"> view case studies <img src={ArrowForward} alt="arrow"/> </Link> */}
+          <Link to="" className="home-case-btn hide"> view case studies <img src={ArrowForward} alt="arrow"/> </Link>
         </div>
       </div>
     </div>

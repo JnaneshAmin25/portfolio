@@ -31,8 +31,7 @@ const Skills = () => {
       <div className="projects-heading">
         <h2>Skills That Shape <br/> My Work</h2>
         <p>
-          A mix of UX strategy, UI craft, and visual design expertise shaping every
-          project.
+          A mix of UX strategy, UI craft, and visual design expertise shaping every project.
         </p>
       </div>
 

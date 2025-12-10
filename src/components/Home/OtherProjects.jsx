@@ -13,6 +13,7 @@ import CanvasCodeBackgroundGlow from "../../assets/Home/Projects/Canvas & Code B
 import OlliePets from "../../assets/Home/Projects/Ollie Pets.png";
 import OlliePetsBackgroundGlow from "../../assets/Home/Projects/Ollie Pets Background Glow.png";
 import SkillStarBackground from "../../assets/Home/Skills/SkillsStarBackground.webp"
+import OtherProjectsMobileBackground from "../../assets/Home/OtherProjects/OtherProjectsobileBackground.webp"
 import ArrowFwd from "../../assets/Home/OtherProjects/arrow_forward.png"
 import ArrowBwd from "../../assets/Home/OtherProjects/arrow_backward.png"
 const OtherProjects = () => {
@@ -32,12 +33,12 @@ const OtherProjects = () => {
         />
         <img
           className="other-projects-heading-background mobile"
-          src={MobileBackground}
+          src={OtherProjectsMobileBackground}
         />
         <div className="other-projects-heading-text">
           <h2>Other Projects</h2>
           <p>
-            Additional work highlighting my range across UX, UI, and visual design.
+            Additional work highlighting my range across <br className="mobile" /> UX, UI, and visual design.
           </p>
         </div>
       </div>

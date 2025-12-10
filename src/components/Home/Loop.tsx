@@ -33,12 +33,6 @@ const Loop = () => {
       </div>
 
       <div className="carousel-section">
-
-        <p className="scroll-text">
-          Keep scrolling.<br />
-          You never know what you'll discover next.
-        </p>
-
         <img src={slides[index].img} className="carousel-img" alt="slide" />
         <div className="title-row">
           <button onClick={prevSlide} className="arrow-btn small-btn">
@@ -54,6 +48,10 @@ const Loop = () => {
               <img src={ArrowForward} alt="" />
           </button>
         </div>
+        <p className="scroll-text">
+          Keep scrolling.<br />
+          You never know what you'll discover next.
+        </p>
       </div>
     </div>
   );
