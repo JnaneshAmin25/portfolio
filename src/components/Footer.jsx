@@ -2,6 +2,7 @@ import React from "react";
 import ArrowForward from "../assets/Home/Banner/arrow-forward.svg"
 import BackgroundLines from "../assets/Home/Banner/BackgrounLines.webp"
 import { Link } from "react-router-dom";
+import MobileBackgroundLines from "../assets/Home/Banner/MobileBackgroundLines.webp"
 import FooterStars from "../assets/Footer/FooterStars.webp"
 import FooterTopBlur from "../assets/Footer/FooterTopBlur.webp"
 
@@ -9,7 +10,7 @@ function Footer() {
   return (
     <footer className="footer">
       <img className="footer-gridlines desktop" src={BackgroundLines} alt="Background" />
-      <img className="footer-gridlines mobile" src={BackgroundLines} alt="Background" />
+      <img className="footer-gridlines mobile" src={MobileBackgroundLines} alt="Background" />
       <img className="home-banner-background-stars" src={FooterStars} alt="Background" />
       <div className="footer-bg">
         <div className="footer-bg-blur" />

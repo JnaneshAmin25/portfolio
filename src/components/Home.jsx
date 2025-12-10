@@ -23,9 +23,9 @@ function Home() {
       </Helmet>
       <Banner />
       <Industries />
+      <Experiences />
       <Projects />
       <Marquee />
-      <Experiences />
       <OtherProjects />
       <Skills />
       <Loop />
