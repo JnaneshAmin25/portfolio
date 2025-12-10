@@ -29,7 +29,7 @@ import CoolzeeBackgroundGlow from "../../assets/Projects/ProjectsList/Coolzee Ba
 import SaveLife from "../../assets/Projects/ProjectsList/Save Life.png";
 import SaveLifeBackgroundGlow from "../../assets/Projects/ProjectsList/Save Life Background Glow.png";
 import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png"
-
+import MobileBackgrnd from "../../assets/Home/Projects/MobileBackground.webp"
 function Projects() {
   return (
     <div className="projects">
@@ -37,7 +37,7 @@ function Projects() {
         <img className="projects-heading-background desktop" src={DesktopBackgrnd}/>
         <img
           className="projects-heading-background mobile"
-          src={MobileBackground}
+          src={MobileBackgrnd}
         />
         <div className="projects-heading-text">
           <h2>Recent Case Studies</h2>

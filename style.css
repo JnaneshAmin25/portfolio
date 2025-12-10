@@ -1260,7 +1260,6 @@ header nav {
     width: 100%;
     font-size: 15px;
     text-align: start;
-    padding: 0 15px;
   }
 
   .carousel-img {
@@ -1302,8 +1301,7 @@ header nav {
   }
 
   .top-row {
-    text-align: center;
-    align-items: center;
+    text-align: start;
   }
 
   .loop-heading {
