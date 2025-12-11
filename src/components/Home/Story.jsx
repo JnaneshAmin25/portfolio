@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import Trailer from "../../assets/Home/Story/Teaser.mp4";
 import Img1 from "../../assets/Home/Story/Img1.png";
@@ -8,19 +9,31 @@ import Img1Mobile from "../../assets/Home/Story/Img1 Mobile.png";
 import Img2Mobile from "../../assets/Home/Story/Img2 Mobile.png";
 import Img3Mobile from "../../assets/Home/Story/Img3 Mobile.png";
 import Img4Mobile from "../../assets/Home/Story/Img4 Mobile.png";
+import { motion } from "framer-motion";
 
 function Story() {
   return (
     <div className="home-story">
       <div className="heading">
-        <h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           Sacred Rituals,
           <br /> Enduring Stories
-        </h2>
-        <p>
-          The Heartbeat of Culture, Passed Down <br className="mobile" />{" "}
-          Through Generations
-        </p>
+        </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          The Heartbeat of Culture, Passed Down <br className="mobile" /> Through
+          Generations
+        </motion.p>
       </div>
       <div className="home-story-container">
         <div className="home-story-video">

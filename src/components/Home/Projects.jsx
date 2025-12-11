@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import DesktopBackground from "../../assets/Home/Projects/Desktop Background.png";
 import MobileBackground from "../../assets/Home/Projects/Mobile Background.png";
@@ -14,128 +14,141 @@ import OlliePets from "../../assets/Home/Projects/Ollie Pets.png";
 import OlliePetsBackgroundGlow from "../../assets/Home/Projects/Ollie Pets Background Glow.png";
 import AarogyaGuru from "../../assets/Home/Projects/Aarogya Guru.png";
 import AarogyaGuruBackgroundGlow from "../../assets/Home/Projects/Aarogya Guru Background Glow.png";
-import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png"
-import MobileBackgrnd from "../../assets/Home/Projects/MobileBackground.webp"
+import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png";
+import MobileBackgrnd from "../../assets/Home/Projects/MobileBackground.webp";
 import SaveLife from "../../assets/Projects/ProjectsList/Save Life.png";
 import SaveLifeBackgroundGlow from "../../assets/Projects/ProjectsList/Save Life Background Glow.png";
 
 function Projects() {
+
+  const sectionRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  // For stagger animation timings
+  const delay = (i) => ({ transitionDelay: `${200 + i * 120}ms` });
+
+  const projectData = [
+    {
+      link: "/projects/save_life",
+      img: SaveLife,
+      glow: SaveLifeBackgroundGlow,
+      title: "Save Life",
+      sub: "2025",
+      tag: "Mobile Application",
+    },
+    {
+      link: "/projects/school_mate",
+      img: SchoolMate,
+      glow: SchoolMateGlow,
+      title: "School Mate",
+      sub: "2025",
+      tag: "Mobile Application",
+    },
+    {
+      link: "/projects/q_easy",
+      img: QEasy,
+      glow: QEasyGlow,
+      title: "Q Easy",
+      sub: "2025",
+      tag: "Mobile Application",
+    },
+    {
+      link: "/projects/google_classroom",
+      img: GoogleClassroom,
+      glow: GoogleClassroomBackgroundGlow,
+      title: "Google Classroom",
+      sub: "2023",
+      tag: "Mobile Application",
+      hideOnMobile: true,
+    },
+    {
+      link: "/projects/canvas_and_code",
+      img: CanvasCode,
+      glow: CanvasCodeBackgroundGlow,
+      title: "Canvas & Code",
+      sub: "2023",
+      tag: "Website Design",
+      hideOnMobile: true,
+    },
+    {
+      link: "/projects/ollie_pets",
+      img: OlliePets,
+      glow: OlliePetsBackgroundGlow,
+      title: "Ollie Pets",
+      sub: "2023",
+      tag: "Website Design",
+      hideOnMobile: true,
+    },
+    {
+      link: "/projects/aarogya_guru",
+      img: AarogyaGuru,
+      glow: AarogyaGuruBackgroundGlow,
+      title: "Aarogya Guru",
+      sub: "2023",
+      tag: "Mobile Application",
+      hideOnMobile: true,
+    },
+  ];
+
   return (
-    <div className="projects">
+    <div ref={sectionRef} className={`projects  ${visible ? "visible" : ""}`}>
       <div className="projects-heading">
-        <img
-          className="projects-heading-background desktop"
-          src={DesktopBackgrnd}
-        />
-        <img
-          className="projects-heading-background mobile"
-          src={MobileBackgrnd}
-        />
-        <div className="projects-heading-text">
-          <h2>Recent <br className="mobile"/> Case Studies</h2>
+        <img className="projects-heading-background desktop" src={DesktopBackgrnd} />
+        <img className="projects-heading-background mobile" src={MobileBackgrnd} />
+        <div className="projects-heading-text ">
+          <h2>Recent <br className="mobile" /> Case Studies</h2>
           <p>
             Creating stunning, user-centric websites <br className="mobile" />{" "}
             that inspire and <br className="desktop" /> engage.
           </p>
         </div>
       </div>
+
       <div className="projects-container">
-        <Link className="projects-set" to="/projects/save_life">
-                  <div className="projects-set-img">
-                    <img src={SaveLife} className="main-img" />
-                    <img src={SaveLifeBackgroundGlow} className="glow-img" />
-                  </div>
-                  <div className="projects-set-text">
-                    <p>Mobile Application</p>
-                    <section>
-                      <h3>Save Life</h3>
-                      <sub>2025</sub>
-                    </section>
-                  </div>
-                </Link>
-         <Link className="projects-set" to="/projects/school_mate">
+        {projectData.map((p, i) => (
+          <Link
+            key={i}
+            to={p.link}
+            className={`projects-set fade-item ${visible ? "visible" : ""} ${
+              p.hideOnMobile ? "desktop" : ""
+            }`}
+            style={delay(i)}
+          >
             <div className="projects-set-img">
-              <img src={SchoolMate} className="main-img" />
-              <img src={SchoolMateGlow} className="glow-img" />
+              <img src={p.img} className="main-img" />
+              <img src={p.glow} className="glow-img" />
             </div>
+
             <div className="projects-set-text">
-              <p>Mobile Application</p>
+              <p>{p.tag}</p>
               <section>
-                <h3>School Mate</h3>
-                <sub>2025</sub>
+                <h3>{p.title}</h3>
+                <sub>{p.sub}</sub>
               </section>
             </div>
           </Link>
-          <Link className="projects-set" to="/projects/q_easy">
-            <div className="projects-set-img">
-              <img src={QEasy} className="main-img" />
-              <img src={QEasyGlow} className="glow-img" />
-            </div>
-            <div className="projects-set-text">
-              <p>Mobile Application</p>
-              <section>
-                <h3>Q Easy</h3>
-                <sub>2025</sub>
-              </section>
-            </div>
-          </Link>
-        <Link className="projects-set desktop" to="/projects/google_classroom">
-          <div className="projects-set-img">
-            <img src={GoogleClassroom} className="main-img" />
-            <img src={GoogleClassroomBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Google Classroom</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set desktop" to="/projects/canvas_and_code">
-          <div className="projects-set-img">
-            <img src={CanvasCode} className="main-img" />
-            <img src={CanvasCodeBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Website Design</p>
-            <section>
-              <h3>Canvas & Code</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set desktop" to="/projects/ollie_pets">
-          <div className="projects-set-img">
-            <img src={OlliePets} className="main-img" />
-            <img src={OlliePetsBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Website Design</p>
-            <section>
-              <h3>Ollie Pets</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set desktop" to="/projects/aarogya_guru">
-          <div className="projects-set-img">
-            <img src={AarogyaGuru} className="main-img" />
-            <img src={AarogyaGuruBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Aarogya Guru</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
+        ))}
       </div>
-      <div className="view-more-wrapper">
-        <Link to="/projects" className="case-btn">
-          View More
-        </Link>
+
+      <div className={`view-more-wrapper fade-item ${visible ? "visible" : ""}`}
+           style={{ transitionDelay: "1200ms" }}>
+        <Link to="/projects" className="case-btn">View More</Link>
       </div>
     </div>
   );

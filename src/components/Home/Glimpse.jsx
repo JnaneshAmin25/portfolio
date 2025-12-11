@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import DesktopBackground from "../../assets/Home/Glimpse/Desktop Background.png";
 import MobileBackground from "../../assets/Home/Glimpse/Mobile Background.png";
@@ -19,27 +20,43 @@ import India from "../../assets/Home/Glimpse/India.jpg";
 import IndiaMobile from "../../assets/Home/Glimpse/India Mobile.jpg";
 import RedBull from "../../assets/Home/Glimpse/RedBull.jpg";
 import GalleryBackgroundBlur from "../../assets/Home/Glimpse/GalleryBackgroundBlur.webp";
+import { motion } from "framer-motion";
+
 function Glimpse() {
   return (
     <div className="glimpse">
-      <img
-        className="glimpse-background desktop"
-        src={GalleryBackgroundBlur}
-        alt="Background"
-      />
-      <img
-        className="glimpse-background mobile"
-        src={GalleryBackgroundBlur}
-        alt="Background"
-      />
+      <img className="glimpse-background desktop" src={GalleryBackgroundBlur} alt="Background" />
+      <img className="glimpse-background mobile" src={GalleryBackgroundBlur} alt="Background" />
+
       <div className="glimpse-heading">
-        <h2>
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           A Glimpse Through <br className="mobile" /> My Lens
-        </h2>
-        <p className="desktop">
+        </motion.h2>
+
+        <motion.p
+          className="desktop"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           We create stunning, user-centric websites that inspire and engage.
-        </p>
-        <p className="mobile">Elevating Brands with Stunning Product Shots</p>
+        </motion.p>
+
+        <motion.p
+          className="mobile"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
+          Elevating Brands with Stunning Product Shots
+        </motion.p>
       </div>
       <div className="glimpse-container">
         <section className="desktop">

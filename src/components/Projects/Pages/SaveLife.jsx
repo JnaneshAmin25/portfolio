@@ -18,23 +18,11 @@ import bento26 from "../../../assets/Projects/Page/Save Life/bento 2.6.png";
 import BackgroundStars from "../../../assets/Home/Banner/BackgroundStars.webp"
 import OtherProjects from "../../Home/OtherProjects";
 import Rocket from "../../../assets/Projects/Page/Save Life/Rocket-Icon.webp"
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+
 
 function SaveLife() {
   const [activeTab, setActiveTab] = useState(0);
 
-  const location = useLocation();
-  
-  useEffect(() => {
-    // Add class to body when component mounts
-    document.body.classList.add("save-life-page");
-    
-    // Remove class when component unmounts
-    return () => {
-      document.body.classList.remove("save-life-page");
-    };
-  }, []);
   const roles = [
     "UX Research",
     "UX Flow",

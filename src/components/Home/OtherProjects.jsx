@@ -1,3 +1,5 @@
+import React, { useEffect, useRef, useState } from "react";
+
 import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png"
 import MobileBackground from "../../assets/Home/Projects/Mobile Background.png";
 import OtherProjectsBackground from "../../assets/Home/OtherProjects/OtherProjectHeaderBackground.webp";
@@ -16,6 +18,7 @@ import SkillStarBackground from "../../assets/Home/Skills/SkillsStarBackground.w
 import OtherProjectsMobileBackground from "../../assets/Home/OtherProjects/OtherProjectsobileBackground.webp"
 import ArrowFwd from "../../assets/Home/OtherProjects/arrow_forward.png"
 import ArrowBwd from "../../assets/Home/OtherProjects/arrow_backward.png"
+
 const OtherProjects = () => {
 
   const scroll = (amount) => {
@@ -23,10 +26,40 @@ const OtherProjects = () => {
     el.scrollBy({ left: amount, behavior: "smooth" });
   };
 
+  // Heading animation only
+  const headingRef = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          obs.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (headingRef.current) obs.observe(headingRef.current);
+
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <div className="other-projects">
-      <img className="home-banner-background-stars" src={SkillStarBackground} alt="Background" />
-      <div className="projects-heading">
+      <img
+        className="home-banner-background-stars"
+        src={SkillStarBackground}
+        alt="Background"
+      />
+
+      {/* Heading with fade animation */}
+      <div
+        className="projects-heading fade-section"
+        ref={headingRef}
+        style={{ ...(visible && { opacity: 1, transform: "translateY(0)" }) }}
+      >
         <img
           className="other-projects-heading-background desktop"
           src={OtherProjectsBackground}
@@ -35,10 +68,12 @@ const OtherProjects = () => {
           className="other-projects-heading-background mobile"
           src={OtherProjectsMobileBackground}
         />
-        <div className="other-projects-heading-text">
+
+        <div className={`other-projects-heading-text fade-delay ${visible ? "visible" : ""}`}>
           <h2>Other Projects</h2>
           <p>
-            Additional work highlighting my range across <br className="mobile" /> UX, UI, and visual design.
+            Additional work highlighting my range across <br className="mobile" /> UX, UI,
+            and visual design.
           </p>
         </div>
       </div>
