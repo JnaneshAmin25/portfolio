@@ -20,7 +20,7 @@
   scroll-behavior: smooth;
 } */
 body {
-  background: #121212;
+  background: #111111;
 }
 
 header {
@@ -505,9 +505,9 @@ header nav {
   height: 503px;
   flex-shrink: 0;
   border-radius: 503px;
-  background: #121212;
   filter: blur(70px);
   z-index: 1;
+  background: #111111
 }
 
 .home-marquee-container .left {
@@ -1541,7 +1541,6 @@ header nav {
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  background: #121212;
 }
 
 .home-story .heading {
@@ -1682,7 +1681,6 @@ header nav {
   flex-direction: column;
   align-items: flex-start;
   gap: 80px;
-  background: #121212;
   position: relative;
 }
 
@@ -3504,7 +3502,7 @@ footer.footer {
   margin: 0 auto;
   width: 1000px;
   height: 1000px;
-  background-color: #121212;
+  background-color: #111111;
   border-radius: 50%;
 }
 

@@ -54,7 +54,7 @@ function Banner() {
             </motion.div>
 
             {/* Paragraph Animation */}
-            <motion.p variants={item}>
+            <motion.p className="footer-tagline" variants={item}>
               Drop a message your next project, <br /> starts with a conversation
             </motion.p>
           </section>

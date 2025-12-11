@@ -58,7 +58,7 @@ export default function Banner() {
             </motion.div>
 
             {/* #3 Description Animation */}
-            <motion.p variants={item}>
+            <motion.p className="footer-tagline" variants={item}>
               UX/UI & Visual Designer focused on turning complex
               challenges into simple, impactful experiences.
             </motion.p>
