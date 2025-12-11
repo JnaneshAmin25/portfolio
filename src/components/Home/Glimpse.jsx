@@ -18,18 +18,18 @@ import CasioMobile from "../../assets/Home/Glimpse/Casio Mobile.png";
 import India from "../../assets/Home/Glimpse/India.jpg";
 import IndiaMobile from "../../assets/Home/Glimpse/India Mobile.jpg";
 import RedBull from "../../assets/Home/Glimpse/RedBull.jpg";
-
+import GalleryBackgroundBlur from "../../assets/Home/Glimpse/GalleryBackgroundBlur.webp";
 function Glimpse() {
   return (
     <div className="glimpse">
       <img
         className="glimpse-background desktop"
-        src={DesktopBackground}
+        src={GalleryBackgroundBlur}
         alt="Background"
       />
       <img
         className="glimpse-background mobile"
-        src={MobileBackground}
+        src={GalleryBackgroundBlur}
         alt="Background"
       />
       <div className="glimpse-heading">

@@ -16,6 +16,8 @@ import AarogyaGuru from "../../assets/Home/Projects/Aarogya Guru.png";
 import AarogyaGuruBackgroundGlow from "../../assets/Home/Projects/Aarogya Guru Background Glow.png";
 import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png"
 import MobileBackgrnd from "../../assets/Home/Projects/MobileBackground.webp"
+import SaveLife from "../../assets/Projects/ProjectsList/Save Life.png";
+import SaveLifeBackgroundGlow from "../../assets/Projects/ProjectsList/Save Life Background Glow.png";
 
 function Projects() {
   return (
@@ -38,33 +40,46 @@ function Projects() {
         </div>
       </div>
       <div className="projects-container">
+        <Link className="projects-set" to="/projects/save_life">
+                  <div className="projects-set-img">
+                    <img src={SaveLife} className="main-img" />
+                    <img src={SaveLifeBackgroundGlow} className="glow-img" />
+                  </div>
+                  <div className="projects-set-text">
+                    <p>Mobile Application</p>
+                    <section>
+                      <h3>Save Life</h3>
+                      <sub>2025</sub>
+                    </section>
+                  </div>
+                </Link>
          <Link className="projects-set" to="/projects/school_mate">
-                  <div className="projects-set-img">
-                    <img src={SchoolMate} className="main-img" />
-                    <img src={SchoolMateGlow} className="glow-img" />
-                  </div>
-                  <div className="projects-set-text">
-                    <p>Mobile Application</p>
-                    <section>
-                      <h3>School Mate</h3>
-                      <sub>2025</sub>
-                    </section>
-                  </div>
-                </Link>
-                <Link className="projects-set" to="/projects/q_easy">
-                  <div className="projects-set-img">
-                    <img src={QEasy} className="main-img" />
-                    <img src={QEasyGlow} className="glow-img" />
-                  </div>
-                  <div className="projects-set-text">
-                    <p>Mobile Application</p>
-                    <section>
-                      <h3>Q Easy</h3>
-                      <sub>2025</sub>
-                    </section>
-                  </div>
-                </Link>
-        <Link className="projects-set" to="/projects/google_classroom">
+            <div className="projects-set-img">
+              <img src={SchoolMate} className="main-img" />
+              <img src={SchoolMateGlow} className="glow-img" />
+            </div>
+            <div className="projects-set-text">
+              <p>Mobile Application</p>
+              <section>
+                <h3>School Mate</h3>
+                <sub>2025</sub>
+              </section>
+            </div>
+          </Link>
+          <Link className="projects-set" to="/projects/q_easy">
+            <div className="projects-set-img">
+              <img src={QEasy} className="main-img" />
+              <img src={QEasyGlow} className="glow-img" />
+            </div>
+            <div className="projects-set-text">
+              <p>Mobile Application</p>
+              <section>
+                <h3>Q Easy</h3>
+                <sub>2025</sub>
+              </section>
+            </div>
+          </Link>
+        <Link className="projects-set desktop" to="/projects/google_classroom">
           <div className="projects-set-img">
             <img src={GoogleClassroom} className="main-img" />
             <img src={GoogleClassroomBackgroundGlow} className="glow-img" />
@@ -77,7 +92,7 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/canvas_and_code">
+        <Link className="projects-set desktop" to="/projects/canvas_and_code">
           <div className="projects-set-img">
             <img src={CanvasCode} className="main-img" />
             <img src={CanvasCodeBackgroundGlow} className="glow-img" />
@@ -90,7 +105,7 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/ollie_pets">
+        <Link className="projects-set desktop" to="/projects/ollie_pets">
           <div className="projects-set-img">
             <img src={OlliePets} className="main-img" />
             <img src={OlliePetsBackgroundGlow} className="glow-img" />
@@ -103,7 +118,7 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/aarogya_guru">
+        <Link className="projects-set desktop" to="/projects/aarogya_guru">
           <div className="projects-set-img">
             <img src={AarogyaGuru} className="main-img" />
             <img src={AarogyaGuruBackgroundGlow} className="glow-img" />
@@ -117,9 +132,11 @@ function Projects() {
           </div>
         </Link>
       </div>
-      <Link to="/projects" className="primary-button">
-        View More
-      </Link>
+      <div className="view-more-wrapper">
+        <Link to="/projects" className="case-btn">
+          View More
+        </Link>
+      </div>
     </div>
   );
 }

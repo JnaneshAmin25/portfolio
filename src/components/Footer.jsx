@@ -1,10 +1,9 @@
-import React from "react";
+
 import ArrowForward from "../assets/Home/Banner/arrow-forward.svg"
 import BackgroundLines from "../assets/Home/Banner/BackgrounLines.webp"
 import { Link } from "react-router-dom";
 import MobileBackgroundLines from "../assets/Home/Banner/MobileBackgroundLines.webp"
 import FooterStars from "../assets/Footer/FooterStars.webp"
-import FooterTopBlur from "../assets/Footer/FooterTopBlur.webp"
 
 function Footer() {
   return (

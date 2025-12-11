@@ -40,7 +40,7 @@ function Projects() {
           src={MobileBackgrnd}
         />
         <div className="projects-heading-text">
-          <h2>Recent Case Studies</h2>
+          <h2>Recent <br className="mobile"/> Case Studies</h2>
           <p>
             Creating stunning, user-centric websites <br className="mobile" />{" "}
             that inspire and <br className="desktop" /> engage.

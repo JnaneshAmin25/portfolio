@@ -18,10 +18,23 @@ import bento26 from "../../../assets/Projects/Page/Save Life/bento 2.6.png";
 import BackgroundStars from "../../../assets/Home/Banner/BackgroundStars.webp"
 import OtherProjects from "../../Home/OtherProjects";
 import Rocket from "../../../assets/Projects/Page/Save Life/Rocket-Icon.webp"
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function SaveLife() {
   const [activeTab, setActiveTab] = useState(0);
 
+  const location = useLocation();
+  
+  useEffect(() => {
+    // Add class to body when component mounts
+    document.body.classList.add("save-life-page");
+    
+    // Remove class when component unmounts
+    return () => {
+      document.body.classList.remove("save-life-page");
+    };
+  }, []);
   const roles = [
     "UX Research",
     "UX Flow",
@@ -39,7 +52,12 @@ function SaveLife() {
 
   return (
     <div className="pages-container">
-      <img className="home-banner-background-stars" src={BackgroundStars} alt="Background" />
+      {/* <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m18 15-6-6-6 6"/>
+        </svg>
+      </button> */}
+      {/* <img className="home-banner-background-stars" src={BackgroundStars} alt="Background" /> */}
       <div className="about-project">
         <div className="project-header">
           <div className="project-header-text-and-icon">
@@ -66,7 +84,6 @@ function SaveLife() {
           <div className="project-overview">
             <div className="project-tabs">
               <div className="tab-line"></div>
-
               {[
                 "OVERVIEW",
                 "RESEARCH & DATA",
@@ -546,7 +563,7 @@ function SaveLife() {
                       </div>
                     </div>
                   </div>
-
+ 
                 </div>
               )}
 

@@ -42,6 +42,7 @@
   justify-content: center;
   gap: 15px;
   color: #B8B8B8;
+  position: relative;
 }
 
 .industry-item {

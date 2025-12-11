@@ -39,6 +39,9 @@ const Skills = () => {
       <div className="skills-block">
         <h4 className="skill-category-title">UX SKILLS</h4>
         <div className="industries-list">
+          <div className="white-blur">
+            <div className="blur-ellips"></div>
+          </div>
           {uxSkills.map((item, idx) => (
             <div key={idx} className="industry-item">
               <div className="top-orange-blur"></div>

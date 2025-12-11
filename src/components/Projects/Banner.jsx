@@ -22,7 +22,7 @@ function Banner() {
             <div className="home-banner-scroll-text">
               <h1> Experience the Impact of <br /> Thoughtful Design. </h1>
             </div>
-            <p>Work grounded in insight, guided by process, and elevated <br /> through design.</p>
+            <p>Work grounded in insight, guided by process, and elevated <br className="desktop" /> through design.</p>
           </section>
           <Link to="" className="home-case-btn hide"> view case studies <img src={ArrowForward} alt="arrow"/> </Link> 
         </div>
