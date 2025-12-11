@@ -48,11 +48,11 @@ const Skills = () => {
       ref={sectionRef}
       className={`skills-section fade-section ${isVisible ? "visible" : ""}`}
     >
-      <img
+      {/* <img
         className="home-banner-background-stars"
         src={SkillStarBackground}
         alt="Background"
-      />
+      /> */}
 
       {/* Heading */}
       <div className={`projects-heading fade-delay ${isVisible ? "visible" : ""}`}>

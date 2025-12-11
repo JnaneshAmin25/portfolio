@@ -22,42 +22,50 @@ import RedBull from "../../assets/Home/Glimpse/RedBull.jpg";
 import GalleryBackgroundBlur from "../../assets/Home/Glimpse/GalleryBackgroundBlur.webp";
 import { motion } from "framer-motion";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.25 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
+
 function Glimpse() {
   return (
     <div className="glimpse">
       <img className="glimpse-background desktop" src={GalleryBackgroundBlur} alt="Background" />
       <img className="glimpse-background mobile" src={GalleryBackgroundBlur} alt="Background" />
 
-      <div className="glimpse-heading">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
+      <motion.div
+        className="glimpse-heading"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false }}
+      >
+        <motion.h2 variants={item}>
           A Glimpse Through <br className="mobile" /> My Lens
         </motion.h2>
 
-        <motion.p
-          className="desktop"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
+        <motion.p className="desktop" variants={item}>
           We create stunning, user-centric websites that inspire and engage.
         </motion.p>
 
-        <motion.p
-          className="mobile"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-          viewport={{ once: true }}
-        >
+        <motion.p className="mobile" variants={item}>
           Elevating Brands with Stunning Product Shots
         </motion.p>
-      </div>
+      </motion.div>
       <div className="glimpse-container">
         <section className="desktop">
           <div className="glimpse-set box-1">

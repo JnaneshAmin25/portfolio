@@ -1,6 +1,29 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from "react";
 import BackgroundStars from "../../assets/Home/Banner/BackgroundStars.webp";
 import "./Industrees.css";
+import { motion } from "framer-motion";
+
+// Parent stagger
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.25 },
+  },
+};
+
+// Child reveal animation
+const item = {
+  hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
 
 const Industries = () => {
   const sectionRef = useRef(null);
@@ -34,25 +57,31 @@ const Industries = () => {
       ref={sectionRef}
       className={`industries-wrapper fade-section ${isVisible ? "visible" : ""}`}
     >
-      <img className="industries-stars-bg" src={BackgroundStars} alt="Background" />
+      {/* <img className="industries-stars-bg" src={BackgroundStars} alt="Background" /> */}
 
-      <h2 className={`industries-title fade-delay ${isVisible ? "visible" : ""}`}>
-        Industries & Projects
-      </h2>
-
-      <h2
-        className={`industries-title fade-delay ${isVisible ? "visible" : ""}`}
-        style={{ marginTop: 4 }}
+      <motion.div
+        variants={container}
+        initial="hidden"
+              animate={isVisible ? "show" : "hidden"}
+              viewport={{ once: false }} 
       >
-        I've Shaped
-      </h2>
+        <motion.h2 className="industries-title fade-delay" variants={item}>
+          Industries & Projects
+        </motion.h2>
 
-      <p
-        className={`industries-subtext fade-delay ${isVisible ? "visible" : ""}`}
-      >
-        A mix of UX strategy, UI craft, and visual design expertise shaping every
-        project.
-      </p>
+        <motion.h2
+          className="industries-title fade-delay"
+          style={{ marginTop: 4 }}
+          variants={item}
+        >
+          I've Shaped
+        </motion.h2>
+
+        <motion.p className="industries-subtext fade-delay" variants={item}>
+          A mix of UX strategy, UI craft, and visual design expertise shaping every
+          project.
+        </motion.p>
+      </motion.div>
 
       <div
         className={`industries-list fade-delay ${isVisible ? "visible" : ""}`}

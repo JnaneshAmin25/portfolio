@@ -5,8 +5,8 @@ import MobileBackground from "../../assets/Home/Experiences/Mobile Background.pn
 function Experiences() {
   return (
     <div className="experiences">
-      <img className="experiences-background desktop" src={DesktopBackground} />
-      <img className="experiences-background mobile " src={MobileBackground} />
+      {/* <img className="experiences-background desktop" src={DesktopBackground} />
+      <img className="experiences-background mobile " src={MobileBackground} /> */}
     
         <ScrollReveal
         baseOpacity={0}

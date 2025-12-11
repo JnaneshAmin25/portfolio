@@ -37,7 +37,7 @@ export default function Banner() {
       initial="hidden"
       animate="show"
     >
-      <img className="home-banner-background-stars" src={BackgroundStars} alt="bg" />
+      {/* <img className="home-banner-background-stars" src={BackgroundStars} alt="bg" /> */}
       <img className="home-banner-background desktop" src={BackgroundLines} alt="bg" />
       <img className="home-banner-background mobile" src={MobileBackgroundLines} alt="bg" />
       <img className="blur-background" src={BannerBackground} alt="blur" />

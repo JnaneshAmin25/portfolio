@@ -11,30 +11,48 @@ import Img3Mobile from "../../assets/Home/Story/Img3 Mobile.png";
 import Img4Mobile from "../../assets/Home/Story/Img4 Mobile.png";
 import { motion } from "framer-motion";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.25 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
 function Story() {
   return (
     <div className="home-story">
-      <div className="heading">
+      <motion.div
+        className="heading"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false }}
+      >
         <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
+           variants={item}
         >
           Sacred Rituals,
           <br /> Enduring Stories
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-          viewport={{ once: true }}
+           variants={item}
         >
           The Heartbeat of Culture, Passed Down <br className="mobile" /> Through
           Generations
         </motion.p>
-      </div>
+      </motion.div>
       <div className="home-story-container">
         <div className="home-story-video">
           <video src={Trailer} muted autoPlay loop playsInline />

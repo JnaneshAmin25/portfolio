@@ -14,11 +14,11 @@ import Youtube from "../../assets/Contact/Marquee/Youtube.png";
 function Marquee() {
   return (
     <div className="home-marquee contact-marquee">
-      <img
+      {/* <img
         className="home-marquee-background"
         src={DesktopBackground}
         alt="Background"
-      />
+      /> */}
       <div className="home-marquee-container">
         <div className="marquee-wrapper">
           <div className="marquee-marquee">
