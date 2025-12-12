@@ -3958,9 +3958,11 @@ footer.footer {
     gap: 8px;
     flex-shrink: 0;
     border-radius: 8px;
-    background: #fff;
-    box-shadow: 0px 2px 16px 0px rgba(255, 255, 255, 0.25);
-    color: #121212;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(6px);
+    color: white;
     text-align: center;
     font-family: Raleway;
     font-size: 18px;
@@ -3968,7 +3970,10 @@ footer.footer {
     font-weight: 600;
     line-height: normal;
     letter-spacing: -0.72px;
+    letter-spacing: -0.96px;
+  transition: all 0.25s ease;
   }
+
 
   .mobile-nav-down-container {
     width: 100%;

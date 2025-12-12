@@ -8,7 +8,7 @@ import MobileBackgroundLines from "../assets/Home/Banner/MobileBackgroundLines.w
 import FooterStars from "../assets/Footer/FooterStars.webp";
 
 function Footer() {
-  // Parent stagger animation
+   // Parent stagger
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -17,7 +17,7 @@ function Footer() {
     },
   };
 
-  // Child fade-up + blur animation
+  // Child reveal animation
   const item = {
     hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
     show: {
@@ -33,8 +33,8 @@ function Footer() {
       className="footer"
       variants={container}
       initial="hidden"
-      animate="show"
-      viewport={{ once: false }}
+      whileInView="show"
+      viewport={{ once: false, amount: 0.2 }}
     >
       {/* Background visuals */}
       <img className="footer-gridlines desktop" src={BackgroundLines} alt="Background" />

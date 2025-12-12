@@ -10,6 +10,7 @@ import Industries from "./Home/Industries";
 import OtherProjects from "./Home/OtherProjects";
 import Skills from "./Home/Skills";
 import Loop from "../components/Home/Loop"
+import BackgroundStars from "./Backgroundsars"
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
           content="I’m Abhay Nayak, a UX Designer passionate about building meaningful and intuitive user experiences. Explore my portfolio and UX case studies."
         />
       </Helmet>
+        <BackgroundStars /> 
       <Banner />
       <Industries />
       <Experiences />
