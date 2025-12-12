@@ -1,8 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
 import { motion } from "framer-motion";
-import DesktopBackgrnd from "../../asset/Home/Projects/DesktopBackground.webp";
-import MobileBackground from "../../asset/Home/Projects/Mobile Background.webp";
 import OtherProjectsBackground from "../../asset/Home/OtherProjects/OtherProjectHeaderBackground.webp";
 import SchoolMate from "../../asset/Home/Projects/School Mate.webp";
 import SchoolMateGlow from "../../asset/Home/Projects/School Mate Background Glow.webp";
@@ -15,7 +12,6 @@ import CanvasCode from "../../asset/Home/Projects/Canvas & Code.webp";
 import CanvasCodeBackgroundGlow from "../../asset/Home/Projects/Canvas & Code Background Glow.webp";
 import OlliePets from "../../asset/Home/Projects/Ollie Pets.webp";
 import OlliePetsBackgroundGlow from "../../asset/Home/Projects/Ollie Pets Background Glow.webp";
-import SkillStarBackground from "../../asset/Home/Skills/SkillsStarBackground.webp";
 import OtherProjectsMobileBackground from "../../asset/Home/OtherProjects/OtherProjectsobileBackground.webp";
 import ArrowFwd from "../../asset/Home/OtherProjects/arrow_forward.webp";
 import ArrowBwd from "../../asset/Home/OtherProjects/arrow_backward.webp";

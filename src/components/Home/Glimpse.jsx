@@ -1,7 +1,4 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import DesktopBackground from "../../asset/Home/Glimpse/Desktop Background.webp";
-import MobileBackground from "../../asset/Home/Glimpse/Mobile Background.webp";
 import CocaCola from "../../asset/Home/Glimpse/CocaCola.webp";
 import CocaColaMobile from "../../asset/Home/Glimpse/CocaCola Mobile.webp";
 import ThumbsUp from "../../asset/Home/Glimpse/ThumbsUp.webp";

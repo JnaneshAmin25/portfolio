@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import DesktopBackground from "../../asset/Home/Marquee/Desktop Background.webp";
 import GoogleClassroom from "../../asset/Home/Marquee/Google Classroom.webp";
 import Ollie from "../../asset/Home/Marquee/Ollie.webp";
 import Whatsapp from "../../asset/Home/Marquee/Whatsapp.webp";
