@@ -1897,6 +1897,7 @@ header nav {
   top: 4px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 50;
 }
 
 @media (max-width: 1000px) {
