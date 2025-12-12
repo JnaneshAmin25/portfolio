@@ -2,10 +2,9 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import ArrowForward from "../assets/Home/Banner/arrow-forward.svg";
-import BackgroundLines from "../assets/Home/Banner/BackgrounLines.webp";
-import MobileBackgroundLines from "../assets/Home/Banner/MobileBackgroundLines.webp";
-import FooterStars from "../assets/Footer/FooterStars.webp";
+import ArrowForward from "../asset/Home/Banner/arrow-forward.svg";
+import BackgroundLines from "../asset/Home/Banner/BackgrounLines.webp";
+import MobileBackgroundLines from "../asset/Home/Banner/MobileBackgroundLines.webp";
 
 function Footer() {
    // Parent stagger

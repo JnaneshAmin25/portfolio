@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import Trailer from "../../assets/Home/Story/Teaser.mp4";
-import Img1 from "../../assets/Home/Story/Img1.png";
-import Img2 from "../../assets/Home/Story/Img2.png";
-import Img3 from "../../assets/Home/Story/Img3.png";
-import Img4 from "../../assets/Home/Story/Img4.png";
-import Img1Mobile from "../../assets/Home/Story/Img1 Mobile.png";
-import Img2Mobile from "../../assets/Home/Story/Img2 Mobile.png";
-import Img3Mobile from "../../assets/Home/Story/Img3 Mobile.png";
-import Img4Mobile from "../../assets/Home/Story/Img4 Mobile.png";
+import Trailer from "../../asset/Home/Story/Teaser.mp4";
+import Img1 from "../../asset/Home/Story/Img1.webp";
+import Img2 from "../../asset/Home/Story/Img2.webp";
+import Img3 from "../../asset/Home/Story/Img3.webp";
+import Img4 from "../../asset/Home/Story/Img4.webp";
+import Img1Mobile from "../../asset/Home/Story/Img1 Mobile.webp";
+import Img2Mobile from "../../asset/Home/Story/Img2 Mobile.webp";
+import Img3Mobile from "../../asset/Home/Story/Img3 Mobile.webp";
+import Img4Mobile from "../../asset/Home/Story/Img4 Mobile.webp";
 import { motion } from "framer-motion";
 
 const container = {

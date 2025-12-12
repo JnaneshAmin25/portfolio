@@ -1,25 +1,24 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
-
-import DesktopBackgrnd from "../../assets/Home/Projects/DesktopBackground.png";
-import MobileBackground from "../../assets/Home/Projects/Mobile Background.png";
-import OtherProjectsBackground from "../../assets/Home/OtherProjects/OtherProjectHeaderBackground.webp";
-import SchoolMate from "../../assets/Home/Projects/School Mate.png";
-import SchoolMateGlow from "../../assets/Home/Projects/School Mate Background Glow.png";
+import DesktopBackgrnd from "../../asset/Home/Projects/DesktopBackground.webp";
+import MobileBackground from "../../asset/Home/Projects/Mobile Background.webp";
+import OtherProjectsBackground from "../../asset/Home/OtherProjects/OtherProjectHeaderBackground.webp";
+import SchoolMate from "../../asset/Home/Projects/School Mate.webp";
+import SchoolMateGlow from "../../asset/Home/Projects/School Mate Background Glow.webp";
 import { Link } from "react-router-dom";
-import QEasy from "../../assets/Home/Projects/Q Easy.png";
-import QEasyGlow from "../../assets/Home/Projects/Q Easy Background Glow.png";
-import GoogleClassroom from "../../assets/Home/Projects/Google Classroom.png";
-import GoogleClassroomBackgroundGlow from "../../assets/Home/Projects/Google Classroom Background Glow.png";
-import CanvasCode from "../../assets/Home/Projects/Canvas & Code.png";
-import CanvasCodeBackgroundGlow from "../../assets/Home/Projects/Canvas & Code Background Glow.png";
-import OlliePets from "../../assets/Home/Projects/Ollie Pets.png";
-import OlliePetsBackgroundGlow from "../../assets/Home/Projects/Ollie Pets Background Glow.png";
-import SkillStarBackground from "../../assets/Home/Skills/SkillsStarBackground.webp";
-import OtherProjectsMobileBackground from "../../assets/Home/OtherProjects/OtherProjectsobileBackground.webp";
-import ArrowFwd from "../../assets/Home/OtherProjects/arrow_forward.png";
-import ArrowBwd from "../../assets/Home/OtherProjects/arrow_backward.png";
+import QEasy from "../../asset/Home/Projects/Q Easy.webp";
+import QEasyGlow from "../../asset/Home/Projects/Q Easy Background Glow.webp";
+import GoogleClassroom from "../../asset/Home/Projects/Google Classroom.webp";
+import GoogleClassroomBackgroundGlow from "../../asset/Home/Projects/Google Classroom Background Glow.webp";
+import CanvasCode from "../../asset/Home/Projects/Canvas & Code.webp";
+import CanvasCodeBackgroundGlow from "../../asset/Home/Projects/Canvas & Code Background Glow.webp";
+import OlliePets from "../../asset/Home/Projects/Ollie Pets.webp";
+import OlliePetsBackgroundGlow from "../../asset/Home/Projects/Ollie Pets Background Glow.webp";
+import SkillStarBackground from "../../asset/Home/Skills/SkillsStarBackground.webp";
+import OtherProjectsMobileBackground from "../../asset/Home/OtherProjects/OtherProjectsobileBackground.webp";
+import ArrowFwd from "../../asset/Home/OtherProjects/arrow_forward.webp";
+import ArrowBwd from "../../asset/Home/OtherProjects/arrow_backward.webp";
 
 const OtherProjects = () => {
   const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.25 } } };

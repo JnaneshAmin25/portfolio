@@ -1,15 +1,15 @@
 import React from "react";
-import icon from "../../../assets/Projects/Page/Youtube/icon.png";
-import banner from "../../../assets/Projects/Page/Youtube/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Youtube/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Youtube/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Youtube/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Youtube/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Youtube/mobile second banner.png";
-import bento11 from "../../../assets/Projects/Page/Youtube/bento 1.1.png";
-import bento12 from "../../../assets/Projects/Page/Youtube/bento 1.2.png";
-import bento21 from "../../../assets/Projects/Page/Youtube/bento 2.1.png";
-import bento22 from "../../../assets/Projects/Page/Youtube/bento 2.2.png";
+import icon from "../../../asset/Projects/Page/Youtube/icon.webp";
+import banner from "../../../asset/Projects/Page/Youtube/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Youtube/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Youtube/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Youtube/overview img.webp";
+import secondbanner from "../../../asset/Projects/Page/Youtube/second banner.webp";
+import mobilesecondbanner from "../../../asset/Projects/Page/Youtube/mobile second banner.webp";
+import bento11 from "../../../asset/Projects/Page/Youtube/bento 1.1.webp";
+import bento12 from "../../../asset/Projects/Page/Youtube/bento 1.2.webp";
+import bento21 from "../../../asset/Projects/Page/Youtube/bento 2.1.webp";
+import bento22 from "../../../asset/Projects/Page/Youtube/bento 2.2.webp";
 
 function Youtube() {
   return (

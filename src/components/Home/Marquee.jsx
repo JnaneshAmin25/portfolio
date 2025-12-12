@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import DesktopBackground from "../../assets/Home/Marquee/Desktop Background.png";
-import GoogleClassroom from "../../assets/Home/Marquee/Google Classroom.png";
-import Ollie from "../../assets/Home/Marquee/Ollie.png";
-import Whatsapp from "../../assets/Home/Marquee/Whatsapp.png";
-import KITE from "../../assets/Home/Marquee/KITE.png";
-import Cricbuzz from "../../assets/Home/Marquee/Cricbuzz.png";
-import URBANMoneky from "../../assets/Home/Marquee/URBAN Moneky.png";
-import Youtube from "../../assets/Home/Marquee/Youtube.png";
+import DesktopBackground from "../../asset/Home/Marquee/Desktop Background.webp";
+import GoogleClassroom from "../../asset/Home/Marquee/Google Classroom.webp";
+import Ollie from "../../asset/Home/Marquee/Ollie.webp";
+import Whatsapp from "../../asset/Home/Marquee/Whatsapp.webp";
+import KITE from "../../asset/Home/Marquee/KITE.webp";
+import Cricbuzz from "../../asset/Home/Marquee/Cricbuzz.webp";
+import URBANMoneky from "../../asset/Home/Marquee/URBAN Moneky.webp";
+import Youtube from "../../asset/Home/Marquee/Youtube.webp";
 
 
 const item = {

@@ -1,14 +1,14 @@
 import React from "react";
-import icon from "../../../assets/Projects/Page/Canvas And Code/icon.png";
-import banner from "../../../assets/Projects/Page/Canvas And Code/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Canvas And Code/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Canvas And Code/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Canvas And Code/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Canvas And Code/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Canvas And Code/mobile second banner.png";
-import thirdbanner1 from "../../../assets/Projects/Page/Canvas And Code/third banner 1.png";
-import mobilethirdbanner1 from "../../../assets/Projects/Page/Canvas And Code/mobile third banner 1.png";
-import thirdbanner2 from "../../../assets/Projects/Page/Canvas And Code/third banner 2.png";
+import icon from "../../../asset/Projects/Page/Canvas And Code/icon.webp";
+import banner from "../../../asset/Projects/Page/Canvas And Code/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Canvas And Code/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Canvas And Code/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Canvas And Code/overview img.webp";
+import secondbanner from "../../../asset/Projects/Page/Canvas And Code/second banner.webp";
+import mobilesecondbanner from "../../../asset/Projects/Page/Canvas And Code/mobile second banner.webp";
+import thirdbanner1 from "../../../asset/Projects/Page/Canvas And Code/third banner 1.webp";
+import mobilethirdbanner1 from "../../../asset/Projects/Page/Canvas And Code/mobile third banner 1.webp";
+import thirdbanner2 from "../../../asset/Projects/Page/Canvas And Code/third banner 2.webp";
 
 function CanvasAndCode() {
   return (

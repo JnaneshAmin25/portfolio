@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import SchoolMate from "../../assets/Home/Projects/School Mate.png";
-import SchoolMateGlow from "../../assets/Home/Projects/School Mate Background Glow.png";
-import QEasy from "../../assets/Home/Projects/Q Easy.png";
-import QEasyGlow from "../../assets/Home/Projects/Q Easy Background Glow.png";
-import GoogleClassroom from "../../assets/Home/Projects/Google Classroom.png";
-import GoogleClassroomBackgroundGlow from "../../assets/Home/Projects/Google Classroom Background Glow.png";
-import CanvasCode from "../../assets/Home/Projects/Canvas & Code.png";
-import CanvasCodeBackgroundGlow from "../../assets/Home/Projects/Canvas & Code Background Glow.png";
-import OlliePets from "../../assets/Home/Projects/Ollie Pets.png";
-import OlliePetsBackgroundGlow from "../../assets/Home/Projects/Ollie Pets Background Glow.png";
-import AarogyaGuru from "../../assets/Home/Projects/Aarogya Guru.png";
-import AarogyaGuruBackgroundGlow from "../../assets/Home/Projects/Aarogya Guru Background Glow.png";
-import SaveLife from "../../assets/Projects/ProjectsList/Save Life.png";
-import SaveLifeBackgroundGlow from "../../assets/Projects/ProjectsList/Save Life Background Glow.png";
-import MobileProjectBackground from "../../assets/Home/Projects/MobileProjectBackground.webp"
-import DesktopProjectFade from "../../assets/Home/Projects/DesktopProjectFade.webp"
-import DesktopProjectVector from "../../assets/Home/Projects/DesktopProjectVector.webp"
-import MobileProjectVector from "../../assets/Home/Projects/MobileProjectVector.webp"
-import MobileProjectBlur from "../../assets/Home/Projects/MobileProjectBlur.webp"
+import SchoolMate from "../../asset/Home/Projects/School Mate.webp";
+import SchoolMateGlow from "../../asset/Home/Projects/School Mate Background Glow.webp";
+import QEasy from "../../asset/Home/Projects/Q Easy.webp";
+import QEasyGlow from "../../asset/Home/Projects/Q Easy Background Glow.webp";
+import GoogleClassroom from "../../asset/Home/Projects/Google Classroom.webp";
+import GoogleClassroomBackgroundGlow from "../../asset/Home/Projects/Google Classroom Background Glow.webp";
+import CanvasCode from "../../asset/Home/Projects/Canvas & Code.webp";
+import CanvasCodeBackgroundGlow from "../../asset/Home/Projects/Canvas & Code Background Glow.webp";
+import OlliePets from "../../asset/Home/Projects/Ollie Pets.webp";
+import OlliePetsBackgroundGlow from "../../asset/Home/Projects/Ollie Pets Background Glow.webp";
+import AarogyaGuru from "../../asset/Home/Projects/Aarogya Guru.webp";
+import AarogyaGuruBackgroundGlow from "../../asset/Home/Projects/Aarogya Guru Background Glow.webp";
+import SaveLife from "../../asset/Projects/ProjectsList/Save Life.webp";
+import SaveLifeBackgroundGlow from "../../asset/Projects/ProjectsList/Save Life Background Glow.webp";
+import MobileProjectBackground from "../../asset/Home/Projects/MobileProjectBackground.webp"
+import DesktopProjectFade from "../../asset/Home/Projects/DesktopProjectFade.webp"
+import DesktopProjectVector from "../../asset/Home/Projects/DesktopProjectVector.webp"
+import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.webp"
+import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
 import { motion } from "framer-motion";
 
 function Projects() {

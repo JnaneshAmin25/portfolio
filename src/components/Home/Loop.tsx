@@ -1,9 +1,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import ArrowForward from "../../assets/Home/OtherProjects/arrow_forward.png";
-import ArrowBackward from "../../assets/Home/OtherProjects/arrow_backward.png";
-import Phone from "../../assets/Home/OtherProjects/phone.webp";
-import LoopBackground from "../../assets/Home/Loop/LoopBackground.webp";
+import ArrowForward from "../../asset/Home/OtherProjects/arrow_forward.webp";
+import ArrowBackward from "../../asset/Home/OtherProjects/arrow_backward.webp";
+import Phone from "../../asset/Home/OtherProjects/phone.webp";
+import LoopBackground from "../../asset/Home/Loop/LoopBackground.webp";
 
 const Loop = () => {
   const slides = [

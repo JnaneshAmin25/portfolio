@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import DesktopBackground from "../../assets/Home/Glimpse/Desktop Background.png";
-import MobileBackground from "../../assets/Home/Glimpse/Mobile Background.png";
-import CocaCola from "../../assets/Home/Glimpse/CocaCola.jpg";
-import CocaColaMobile from "../../assets/Home/Glimpse/CocaCola Mobile.jpg";
-import ThumbsUp from "../../assets/Home/Glimpse/ThumbsUp.jpg";
-import ThumbsUpMobile from "../../assets/Home/Glimpse/ThumbsUp Mobile.png";
-import Pepsi from "../../assets/Home/Glimpse/Pepsi.jpg";
-import PepsiMobile from "../../assets/Home/Glimpse/Pepsi Mobile.jpg";
-import NiveaMen from "../../assets/Home/Glimpse/NiveaMen.jpg";
-import NiveaMenMobile from "../../assets/Home/Glimpse/NiveaMen Mobile.png";
-import Fizz from "../../assets/Home/Glimpse/Fizz.jpg";
-import FizzMobile from "../../assets/Home/Glimpse/Fizz Mobile.jpg";
-import Monster from "../../assets/Home/Glimpse/Monster.png";
-import MonsterMobile from "../../assets/Home/Glimpse/Monster Mobile.png";
-import Casio from "../../assets/Home/Glimpse/Casio.png";
-import CasioMobile from "../../assets/Home/Glimpse/Casio Mobile.png";
-import India from "../../assets/Home/Glimpse/India.jpg";
-import IndiaMobile from "../../assets/Home/Glimpse/India Mobile.jpg";
-import RedBull from "../../assets/Home/Glimpse/RedBull.jpg";
-import GalleryBackgroundBlur from "../../assets/Home/Glimpse/GalleryBackgroundBlur.webp";
+import DesktopBackground from "../../asset/Home/Glimpse/Desktop Background.webp";
+import MobileBackground from "../../asset/Home/Glimpse/Mobile Background.webp";
+import CocaCola from "../../asset/Home/Glimpse/CocaCola.webp";
+import CocaColaMobile from "../../asset/Home/Glimpse/CocaCola Mobile.webp";
+import ThumbsUp from "../../asset/Home/Glimpse/ThumbsUp.webp";
+import ThumbsUpMobile from "../../asset/Home/Glimpse/ThumbsUp Mobile.webp";
+import Pepsi from "../../asset/Home/Glimpse/Pepsi.webp";
+import PepsiMobile from "../../asset/Home/Glimpse/Pepsi Mobile.webp";
+import NiveaMen from "../../asset/Home/Glimpse/NiveaMen.webp";
+import NiveaMenMobile from "../../asset/Home/Glimpse/NiveaMen Mobile.webp";
+import Fizz from "../../asset/Home/Glimpse/Fizz.webp";
+import FizzMobile from "../../asset/Home/Glimpse/Fizz Mobile.webp";
+import Monster from "../../asset/Home/Glimpse/Monster.webp";
+import MonsterMobile from "../../asset/Home/Glimpse/Monster Mobile.webp";
+import Casio from "../../asset/Home/Glimpse/Casio.webp";
+import CasioMobile from "../../asset/Home/Glimpse/Casio Mobile.webp";
+import India from "../../asset/Home/Glimpse/India.webp";
+import IndiaMobile from "../../asset/Home/Glimpse/India Mobile.webp";
+import RedBull from "../../asset/Home/Glimpse/RedBull.webp";
+import GalleryBackgroundBlur from "../../asset/Home/Glimpse/GalleryBackgroundBlur.webp";
 import { motion } from "framer-motion";
 
 const container = {

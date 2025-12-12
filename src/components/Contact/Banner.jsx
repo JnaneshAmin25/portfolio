@@ -1,10 +1,9 @@
-import BackgroundLines from "../../assets/Home/Banner/BackgrounLines.webp";
-import BackgroundStars from "../../assets/Home/Banner/BackgroundStars.webp";
+import BackgroundLines from "../../asset/Home/Banner/BackgrounLines.webp";
 import OpenToWork from "../OpenToWork";
-import BannerBackground from "../../assets/Home/Banner/BannerBackground.webp";
-import ArrowForward from "../../assets/Home/Banner/arrow-forward.svg";
+import BannerBackground from "../../asset/Home/Banner/BannerBackground.webp";
+import ArrowForward from "../../asset/Home/Banner/arrow-forward.svg";
 import { Link } from "react-router-dom";
-import MobileBackgroundLines from "../../assets/Home/Banner/MobileBackgroundLines.webp";
+import MobileBackgroundLines from "../../asset/Home/Banner/MobileBackgroundLines.webp";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 

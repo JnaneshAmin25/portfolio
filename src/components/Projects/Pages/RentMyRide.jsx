@@ -1,23 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import icon from "../../../assets/Projects/Page/Rent My Ride/icon.png";
-import banner from "../../../assets/Projects/Page/Rent My Ride/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Rent My Ride/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Rent My Ride/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Rent My Ride/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Rent My Ride/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Rent My Ride/mobile second banner.png";
-import thirdbanner1 from "../../../assets/Projects/Page/Rent My Ride/third banner 1.png";
-import thirdbanner2 from "../../../assets/Projects/Page/Rent My Ride/third banner 2.png";
-import bento12 from "../../../assets/Projects/Page/Rent My Ride/bento 1.2.png";
-import bento11 from "../../../assets/Projects/Page/Rent My Ride/bento 1.1.png";
-import bento13 from "../../../assets/Projects/Page/Rent My Ride/bento 1.3.png";
-import bento14 from "../../../assets/Projects/Page/Rent My Ride/bento 1.4.png";
-import bento21 from "../../../assets/Projects/Page/Rent My Ride/bento 2.1.png";
-import bento22 from "../../../assets/Projects/Page/Rent My Ride/bento 2.2.png";
-import bento23 from "../../../assets/Projects/Page/Rent My Ride/bento 2.3.png";
-import bento24 from "../../../assets/Projects/Page/Rent My Ride/bento 2.4.png";
-import bento25 from "../../../assets/Projects/Page/Rent My Ride/bento 2.5.png";
+import icon from "../../../asset/Projects/Page/Rent My Ride/icon.webp";
+import banner from "../../../asset/Projects/Page/Rent My Ride/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Rent My Ride/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Rent My Ride/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Rent My Ride/overview img.webp";
+import secondbanner from "../../../asset/Projects/Page/Rent My Ride/second banner.webp";
+import mobilesecondbanner from "../../../asset/Projects/Page/Rent My Ride/mobile second banner.webp";
+import thirdbanner1 from "../../../asset/Projects/Page/Rent My Ride/third banner 1.webp";
+import thirdbanner2 from "../../../asset/Projects/Page/Rent My Ride/third banner 2.webp";
+import bento12 from "../../../asset/Projects/Page/Rent My Ride/bento 1.2.webp";
+import bento11 from "../../../asset/Projects/Page/Rent My Ride/bento 1.1.webp";
+import bento13 from "../../../asset/Projects/Page/Rent My Ride/bento 1.3.webp";
+import bento14 from "../../../asset/Projects/Page/Rent My Ride/bento 1.4.webp";
+import bento21 from "../../../asset/Projects/Page/Rent My Ride/bento 2.1.webp";
+import bento22 from "../../../asset/Projects/Page/Rent My Ride/bento 2.2.webp";
+import bento23 from "../../../asset/Projects/Page/Rent My Ride/bento 2.3.webp";
+import bento24 from "../../../asset/Projects/Page/Rent My Ride/bento 2.4.webp";
+import bento25 from "../../../asset/Projects/Page/Rent My Ride/bento 2.5.webp";
 
 function RentMyRide() {
   return (

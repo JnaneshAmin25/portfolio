@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import icon from "../../../assets/Projects/Page/Ollie Pets/icon.png";
-import banner from "../../../assets/Projects/Page/Ollie Pets/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Ollie Pets/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Ollie Pets/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Ollie Pets/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Ollie Pets/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Ollie Pets/mobile second banner.png";
-import thirdbanner1 from "../../../assets/Projects/Page/Ollie Pets/third banner 1.png";
-import mobilethirdbanner1 from "../../../assets/Projects/Page/Ollie Pets/mobile third banner 1.png";
-import thirdbanner2 from "../../../assets/Projects/Page/Ollie Pets/third banner 2.png";
+import icon from "../../../asset/Projects/Page/Ollie Pets/icon.webp";
+import banner from "../../../asset/Projects/Page/Ollie Pets/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Ollie Pets/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Ollie Pets/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Ollie Pets/overview img.webp";
+import secondbanner from "../../../asset/Projects/Page/Ollie Pets/second banner.webp";
+import mobilesecondbanner from "../../../asset/Projects/Page/Ollie Pets/mobile second banner.webp";
+import thirdbanner1 from "../../../asset/Projects/Page/Ollie Pets/third banner 1.webp";
+import mobilethirdbanner1 from "../../../asset/Projects/Page/Ollie Pets/mobile third banner 1.webp";
+import thirdbanner2 from "../../../asset/Projects/Page/Ollie Pets/third banner 2.webp";
 
 function OlliePets() {
   const [showMore, setShowMore] = useState(false);

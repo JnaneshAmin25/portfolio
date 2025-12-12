@@ -1,36 +1,36 @@
 /* eslint-disable no-unused-vars */
 
 import { Link } from "react-router-dom";
-import SchoolMate from "../../assets/Projects/ProjectsList/School Mate.png";
-import SchoolMateGlow from "../../assets/Projects/ProjectsList/School Mate Background Glow.png";
-import QEasy from "../../assets/Projects/ProjectsList/Q Easy.png";
-import QEasyGlow from "../../assets/Projects/ProjectsList/Q Easy Background Glow.png";
-import GoogleClassroom from "../../assets/Projects/ProjectsList/Google Classroom.png";
-import GoogleClassroomBackgroundGlow from "../../assets/Projects/ProjectsList/Google Classroom Background Glow.png";
-import RentMyRide from "../../assets/Projects/ProjectsList/Rent My Ride.png";
-import RentMyRideBackgroundGlow from "../../assets/Projects/ProjectsList/Rent My Ride Background Glow.png";
-import KITE from "../../assets/Projects/ProjectsList/KITE.png";
-import KITEBackgroundGlow from "../../assets/Projects/ProjectsList/KITE Background Glow.png";
-import CanvasCode from "../../assets/Projects/ProjectsList/Canvas & Code.png";
-import CanvasCodeBackgroundGlow from "../../assets/Projects/ProjectsList/Canvas & Code Background Glow.png";
-import OlliePets from "../../assets/Projects/ProjectsList/Ollie Pets.png";
-import OlliePetsBackgroundGlow from "../../assets/Projects/ProjectsList/Ollie Pets Background Glow.png";
-import AarogyaGuru from "../../assets/Projects/ProjectsList/Aarogya Guru.png";
-import AarogyaGuruBackgroundGlow from "../../assets/Projects/ProjectsList/Aarogya Guru Background Glow.png";
-import WhatsApp from "../../assets/Projects/ProjectsList/WhatsApp.png";
-import WhatsAppBackgroundGlow from "../../assets/Projects/ProjectsList/WhatsApp Background Glow.png";
-import YouTube from "../../assets/Projects/ProjectsList/YouTube.png";
-import YouTubeBackgroundGlow from "../../assets/Projects/ProjectsList/YouTube Background Glow.png";
-import UrbanMonkey from "../../assets/Projects/ProjectsList/Urban Monkey.png";
-import UrbanMonkeyBackgroundGlow from "../../assets/Projects/ProjectsList/Urban Monkey Background Glow.png";
-import Coolzee from "../../assets/Projects/ProjectsList/Coolzee.png";
-import CoolzeeBackgroundGlow from "../../assets/Projects/ProjectsList/Coolzee Background Glow.png";
-import SaveLife from "../../assets/Projects/ProjectsList/Save Life.png";
-import SaveLifeBackgroundGlow from "../../assets/Projects/ProjectsList/Save Life Background Glow.png";
-import DesktopProjectFade from "../../assets/Home/Projects/DesktopProjectFade.webp"
-import DesktopProjectVector from "../../assets/Home/Projects/DesktopProjectVector.webp"
-import MobileProjectVector from "../../assets/Home/Projects/MobileProjectVector.webp"
-import MobileProjectBlur from "../../assets/Home/Projects/MobileProjectBlur.webp"
+import SchoolMate from "../../asset/Projects/ProjectsList/School Mate.webp";
+import SchoolMateGlow from "../../asset/Projects/ProjectsList/School Mate Background Glow.webp";
+import QEasy from "../../asset/Projects/ProjectsList/Q Easy.webp";
+import QEasyGlow from "../../asset/Projects/ProjectsList/Q Easy Background Glow.webp";
+import GoogleClassroom from "../../asset/Projects/ProjectsList/Google Classroom.webp";
+import GoogleClassroomBackgroundGlow from "../../asset/Projects/ProjectsList/Google Classroom Background Glow.webp";
+import RentMyRide from "../../asset/Projects/ProjectsList/Rent My Ride.webp";
+import RentMyRideBackgroundGlow from "../../asset/Projects/ProjectsList/Rent My Ride Background Glow.webp";
+import KITE from "../../asset/Projects/ProjectsList/KITE.webp";
+import KITEBackgroundGlow from "../../asset/Projects/ProjectsList/KITE Background Glow.webp";
+import CanvasCode from "../../asset/Projects/ProjectsList/Canvas & Code.webp";
+import CanvasCodeBackgroundGlow from "../../asset/Projects/ProjectsList/Canvas & Code Background Glow.webp";
+import OlliePets from "../../asset/Projects/ProjectsList/Ollie Pets.webp";
+import OlliePetsBackgroundGlow from "../../asset/Projects/ProjectsList/Ollie Pets Background Glow.webp";
+import AarogyaGuru from "../../asset/Projects/ProjectsList/Aarogya Guru.webp";
+import AarogyaGuruBackgroundGlow from "../../asset/Projects/ProjectsList/Aarogya Guru Background Glow.webp";
+import WhatsApp from "../../asset/Projects/ProjectsList/WhatsApp.webp";
+import WhatsAppBackgroundGlow from "../../asset/Projects/ProjectsList/WhatsApp Background Glow.webp";
+import YouTube from "../../asset/Projects/ProjectsList/YouTube.webp";
+import YouTubeBackgroundGlow from "../../asset/Projects/ProjectsList/YouTube Background Glow.webp";
+import UrbanMonkey from "../../asset/Projects/ProjectsList/Urban Monkey.webp";
+import UrbanMonkeyBackgroundGlow from "../../asset/Projects/ProjectsList/Urban Monkey Background Glow.webp";
+import Coolzee from "../../asset/Projects/ProjectsList/Coolzee.webp";
+import CoolzeeBackgroundGlow from "../../asset/Projects/ProjectsList/Coolzee Background Glow.webp";
+import SaveLife from "../../asset/Projects/ProjectsList/Save Life.webp";
+import SaveLifeBackgroundGlow from "../../asset/Projects/ProjectsList/Save Life Background Glow.webp";
+import DesktopProjectFade from "../../asset/Home/Projects/DesktopProjectFade.webp"
+import DesktopProjectVector from "../../asset/Home/Projects/DesktopProjectVector.webp"
+import MobileProjectVector from "../../asset/Home/Projects/MobileProjectVector.webp"
+import MobileProjectBlur from "../../asset/Home/Projects/MobileProjectBlur.webp"
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 function Projects() {

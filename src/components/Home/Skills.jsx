@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import SkillStarBackground from "../../assets/Home/Skills/SkillsStarBackground.webp";
 
 const uxSkills = [
   "User Research",

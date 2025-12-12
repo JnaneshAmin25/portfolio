@@ -1,25 +1,25 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import icon from "../../../assets/Projects/Page/Save Life/icon.png";
-import banner from "../../../assets/Projects/Page/Save Life/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Save Life/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Save Life/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Save Life/overview img.png";
-import bento11 from "../../../assets/Projects/Page/Save Life/bento 1.1.png";
-import bento12 from "../../../assets/Projects/Page/Save Life/bento 1.2.png";
-import bento13 from "../../../assets/Projects/Page/Save Life/bento 1.3.png";
-import bento14 from "../../../assets/Projects/Page/Save Life/bento 1.4.png";
-import bento15 from "../../../assets/Projects/Page/Save Life/bento 1.5.png";
-import bento21 from "../../../assets/Projects/Page/Save Life/bento 2.1.png";
-import bento22 from "../../../assets/Projects/Page/Save Life/bento 2.2.png";
-import bento23 from "../../../assets/Projects/Page/Save Life/bento 2.3.png";
-import bento24 from "../../../assets/Projects/Page/Save Life/bento 2.4.png";
-import bento25 from "../../../assets/Projects/Page/Save Life/bento 2.5.png";
-import bento26 from "../../../assets/Projects/Page/Save Life/bento 2.6.png";
+import icon from "../../../asset/Projects/Page/Save Life/icon.webp";
+import banner from "../../../asset/Projects/Page/Save Life/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Save Life/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Save Life/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Save Life/overview img.webp";
+import bento11 from "../../../asset/Projects/Page/Save Life/bento 1.1.webp";
+import bento12 from "../../../asset/Projects/Page/Save Life/bento 1.2.webp";
+import bento13 from "../../../asset/Projects/Page/Save Life/bento 1.3.webp";
+import bento14 from "../../../asset/Projects/Page/Save Life/bento 1.4.webp";
+import bento15 from "../../../asset/Projects/Page/Save Life/bento 1.5.webp";
+import bento21 from "../../../asset/Projects/Page/Save Life/bento 2.1.webp";
+import bento22 from "../../../asset/Projects/Page/Save Life/bento 2.2.webp";
+import bento23 from "../../../asset/Projects/Page/Save Life/bento 2.3.webp";
+import bento24 from "../../../asset/Projects/Page/Save Life/bento 2.4.webp";
+import bento25 from "../../../asset/Projects/Page/Save Life/bento 2.5.webp";
+import bento26 from "../../../asset/Projects/Page/Save Life/bento 2.6.webp";
 import BackgroundStars from "../../Backgroundsars"
 import OtherProjects from "../../Home/OtherProjects";
-import Rocket from "../../../assets/Projects/Page/Save Life/Rocket-Icon.webp"
+import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 
 function SaveLife() {
   const [activeTab, setActiveTab] = useState(0);

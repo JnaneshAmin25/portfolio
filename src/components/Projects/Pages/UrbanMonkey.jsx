@@ -1,14 +1,14 @@
 import React from "react";
-import icon from "../../../assets/Projects/Page/Urban Monkey/icon.png";
-import banner from "../../../assets/Projects/Page/Urban Monkey/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Urban Monkey/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Urban Monkey/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Urban Monkey/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Urban Monkey/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Urban Monkey/mobile second banner.png";
-import thirdbanner1 from "../../../assets/Projects/Page/Urban Monkey/third banner 1.png";
-import mobilethirdbanner1 from "../../../assets/Projects/Page/Urban Monkey/mobile third banner 1.png";
-import thirdbanner2 from "../../../assets/Projects/Page/Urban Monkey/third banner 2.png";
+import icon from "../../../asset/Projects/Page/Urban Monkey/icon.webp";
+import banner from "../../../asset/Projects/Page/Urban Monkey/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Urban Monkey/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Urban Monkey/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Urban Monkey/overview img.webp";
+import secondbanner from "../../../asset/Projects/Page/Urban Monkey/second banner.webp";
+import mobilesecondbanner from "../../../asset/Projects/Page/Urban Monkey/mobile second banner.webp";
+import thirdbanner1 from "../../../asset/Projects/Page/Urban Monkey/third banner 1.webp";
+import mobilethirdbanner1 from "../../../asset/Projects/Page/Urban Monkey/mobile third banner 1.webp";
+import thirdbanner2 from "../../../asset/Projects/Page/Urban Monkey/third banner 2.webp";
 
 function UrbanMonkey() {
   return (

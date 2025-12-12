@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Resume from "/Abhay Nayak's CV.pdf";
-import Menu from "../assets/Navbar/menu.png";
-import MenuCancel from "../assets/Navbar/menu cancel.png";
-import Arrow from "../assets/Navbar/arrow.png";
+import Menu from "../asset/Navbar/menu.webp";
+import MenuCancel from "../asset/Navbar/menu cancel.webp";
+import Arrow from "../asset/Navbar/arrow.webp";
 
 function Navbar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);

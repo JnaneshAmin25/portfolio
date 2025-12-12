@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { useEffect, useRef, useState } from "react";
-import BackgroundStars from "../../assets/Home/Banner/BackgroundStars.webp";
 import "./Industrees.css";
 import { motion } from "framer-motion";
 

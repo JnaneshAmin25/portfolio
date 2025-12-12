@@ -1,20 +1,20 @@
 import React, { useState } from "react";
-import icon from "../../../assets/Projects/Page/Q Easy/icon.png";
-import banner from "../../../assets/Projects/Page/Q Easy/banner.png";
-import mobilebanner from "../../../assets/Projects/Page/Q Easy/mobile banner.png";
-import toolused from "../../../assets/Projects/Page/Q Easy/tool used.png";
-import overviewimg from "../../../assets/Projects/Page/Q Easy/overview img.png";
-import secondbanner from "../../../assets/Projects/Page/Q Easy/second banner.png";
-import mobilesecondbanner from "../../../assets/Projects/Page/Q Easy/mobile second banner.png";
-import thirdbanner1 from "../../../assets/Projects/Page/Q Easy/third banner 1.png";
-import thirdbanner2 from "../../../assets/Projects/Page/Q Easy/third banner 2.png";
-import bento11 from "../../../assets/Projects/Page/Q Easy/bento 1.1.png";
-import bento12 from "../../../assets/Projects/Page/Q Easy/bento 1.2.png";
-import bento13 from "../../../assets/Projects/Page/Q Easy/bento 1.3.png";
-import bento21 from "../../../assets/Projects/Page/Q Easy/bento 2.1.png";
-import bento22 from "../../../assets/Projects/Page/Q Easy/bento 2.2.png";
-import bento23 from "../../../assets/Projects/Page/Q Easy/bento 2.3.png";
-import bento24 from "../../../assets/Projects/Page/Q Easy/bento 2.4.png";
+import icon from "../../../asset/Projects/Page/Q Easy/icon.webp";
+import banner from "../../../asset/Projects/Page/Q Easy/banner.webp";
+import mobilebanner from "../../../asset/Projects/Page/Q Easy/mobile banner.webp";
+import toolused from "../../../asset/Projects/Page/Q Easy/tool used.webp";
+import overviewimg from "../../../asset/Projects/Page/Q Easy/overview img.webp";
+import secondbanner from "../../../asset/Projects/Page/Q Easy/second banner.webp";
+import mobilesecondbanner from "../../../asset/Projects/Page/Q Easy/mobile second banner.webp";
+import thirdbanner1 from "../../../asset/Projects/Page/Q Easy/third banner 1.webp";
+import thirdbanner2 from "../../../asset/Projects/Page/Q Easy/third banner 2.webp";
+import bento11 from "../../../asset/Projects/Page/Q Easy/bento 1.1.webp";
+import bento12 from "../../../asset/Projects/Page/Q Easy/bento 1.2.webp";
+import bento13 from "../../../asset/Projects/Page/Q Easy/bento 1.3.webp";
+import bento21 from "../../../asset/Projects/Page/Q Easy/bento 2.1.webp";
+import bento22 from "../../../asset/Projects/Page/Q Easy/bento 2.2.webp";
+import bento23 from "../../../asset/Projects/Page/Q Easy/bento 2.3.webp";
+import bento24 from "../../../asset/Projects/Page/Q Easy/bento 2.4.webp";
 
 function QEasy() {
   const [showMore, setShowMore] = useState(false);
