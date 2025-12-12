@@ -164,6 +164,10 @@
 
 @media (max-width: 600px) {
 
+    .globe-header-container p{
+        font-size: 16px;
+    }
+
     .globe-exp-wrapper {
         padding: 80px 20px 80px 20px;
     }

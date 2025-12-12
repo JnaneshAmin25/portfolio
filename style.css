@@ -1411,6 +1411,10 @@ header nav {
 }
 
 @media (max-width: 600px) {
+
+  .loop-scroll-container {
+    height: 420vh;
+  }
   
   .loop-wrapper {
     padding: 40px 20px;
