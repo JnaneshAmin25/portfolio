@@ -1194,12 +1194,9 @@ header nav {
 
 .top-row {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  z-index: 200;
 }
 
 .loop-heading {
@@ -1230,8 +1227,8 @@ header nav {
 }
 
 .carousel-img {
-  width: 622px;
-  height: 495px;
+  width: auto;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -1283,7 +1280,6 @@ header nav {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-top: 25px;
 }
 
 .title-block {
@@ -1302,6 +1298,47 @@ header nav {
   align-items: center;
   cursor: pointer;
 }
+
+.loop-scroll-container {
+  width: 100%;
+  height: 520vh;
+  position: relative;
+  font-family: Raleway;
+}
+
+/* Sticky background */
+.loop-bg-img {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loop-sticky-wrapper {
+  position: sticky;
+  top: 0;         
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+  padding-top: 0;  
+}
+
+.loop-inner-content {
+  width: 100%;
+  max-width: 1280px;
+  padding: 60px 150px;
+  margin: 0 auto;
+  z-index: 10;
+  opacity: 0;
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .loop-wrapper{
@@ -1365,6 +1402,11 @@ header nav {
     height: 40px;
   }
 
+  .loop-inner-content {
+    width: 100%;
+    padding: 60px 20px;
+    z-index: 10;
+  }
   
 }
 
@@ -1815,7 +1857,7 @@ header nav {
 .tab-line {
   position: absolute;
   top: 10px;
-  width: 90%;
+  width: 100%;
   height: 1px;
   background: #3b3b3b;
 }
@@ -1825,6 +1867,7 @@ header nav {
   position: relative;
   padding-top: 24px;
   color: #6E6E6E;
+  font-weight: 600;
   font-family: Raleway;
   font-size: 18px;
   cursor: pointer;
@@ -1858,6 +1901,7 @@ header nav {
     overflow-x: auto;
     gap: 28px;
     scrollbar-width: none;
+    position: relative;
   }
   
    .tab-line {
@@ -1875,7 +1919,7 @@ header nav {
   .project-tabs {
     gap: 24px;
     position: sticky;
-    background: #121212;
+    background: #111111;
     top: 64px;
     z-index: 10;
   }
@@ -1888,6 +1932,7 @@ header nav {
   .tab-line {
     width: max-content;
     min-width: 100%;
+    z-index: 50;
   }
 }
 
@@ -2153,7 +2198,9 @@ header nav {
   color: #79D528;
   font-weight: bold;
   font-size: 16px;
-  font-family: Playpen;
+  font-family: Raleway;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-style: normal;
   letter-spacing: -2%;
 }
 
@@ -2359,10 +2406,10 @@ header nav {
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255);
-  width: 114px;
+  width: 60px;
   height: 43px;
   border-radius: 50%;
-  filter: blur(50px);
+  filter: blur(40px);
 }
 
 .svg-wrapper svg {
@@ -2405,9 +2452,9 @@ header nav {
 .project-overview-set h4 {
   color: #cccccc;
   font-variant-numeric: lining-nums proportional-nums;
+  font-style: normal;
   font-family: Raleway;
   font-size: 24px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.96px;
@@ -2466,7 +2513,9 @@ header nav {
 }
 
 .bar-label {
-  font-family: Playpen;
+  font-family: Raleway;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-style: normal;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
@@ -3200,7 +3249,7 @@ form {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 80px 400px;
+  padding: 80px 100px;
   flex-direction: column;
   align-items: flex-end;
   gap: 48px;
@@ -3239,7 +3288,7 @@ form label {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  letter-spacing: -0.64px;
+  letter-spacing: -2%;
 }
 
 form input,
@@ -3260,7 +3309,7 @@ form textarea {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: -0.64px;
+  letter-spacing: -2%;
 }
 
 form textarea {
@@ -3288,7 +3337,7 @@ form button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: -0.72px;
+  letter-spacing: -2%;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -3313,7 +3362,7 @@ form button:hover {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  letter-spacing: -0.64px;
+  letter-spacing: -2%;
 }
 
 .contact-marquee .marquee-marquee img {
@@ -3560,6 +3609,7 @@ footer.footer {
 .footer-tagline {
   font-size: 18px;
   color: #999999;
+  font-weight: 500;
   letter-spacing: -4%;
   max-width: 520px;
 }

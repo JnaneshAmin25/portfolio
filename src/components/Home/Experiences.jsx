@@ -1,6 +1,4 @@
 import ScrollReveal from "../ScrollReveal"
-import DesktopBackground from "../../assets/Home/Experiences/Desktop Background.png";
-import MobileBackground from "../../assets/Home/Experiences/Mobile Background.png";
 
 function Experiences() {
   return (
@@ -14,7 +12,7 @@ function Experiences() {
         baseRotation={5}
         blurStrength={10}
       >
-        I’m a hands-on UX/UI designer who turns ideas into clear, functional, and delightful products. Over the years, I’ve worked across diverse industries from SaaS, travel, fintech, e-commerce, AI, healthcare, and more. , Designing for multiple user types, devices, and interactions, including micro-animations.
+        I’m a hands-on UX/UI designer who turns ideas into clear, functional, and delightful products. Over the years, I’ve worked across diverse industries from SaaS, travel, fintech, e-commerce, AI, healthcare, and more. Designing for multiple user types, devices, and interactions, including micro-animations.
       </ScrollReveal>
     </div>
   );

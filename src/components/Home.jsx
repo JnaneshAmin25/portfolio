@@ -11,6 +11,7 @@ import OtherProjects from "./Home/OtherProjects";
 import Skills from "./Home/Skills";
 import Loop from "../components/Home/Loop"
 import BackgroundStars from "./Backgroundsars"
+import GlobeExperiance from "./GlobeExperiance"
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
       <Banner />
       <Industries />
       <Experiences />
+      <GlobeExperiance />
       <Projects />
       <Marquee />
       <OtherProjects />

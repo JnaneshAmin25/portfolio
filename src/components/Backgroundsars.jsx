@@ -4,9 +4,9 @@ const BackgroundStars = () => {
   const canvasRef = useRef(null);
   const layers = [];
   const LAYER_CONFIG = [
-    { count: 300, speed: 0.15, drift: 0.1 }, // far layer (slow)
-    { count: 200, speed: 0.35, drift: 0.2 }, // middle layer
-    { count: 200, speed: 0.6, drift: 0.35 },  // near layer (fast)
+    { count: 150, base: 0.15, drift: 0.1 },
+    { count: 120, base: 0.3, drift: 0.2 },
+    { count: 70,  base: 0.55, drift: 0.3 },
   ];
 
   useEffect(() => {
@@ -21,48 +21,65 @@ const BackgroundStars = () => {
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
-    // Create layered stars
-    LAYER_CONFIG.forEach(({ count, speed, drift }) => {
+    // CREATE LAYERS
+    LAYER_CONFIG.forEach(({ count, base, drift }) => {
       const stars = [];
       for (let i = 0; i < count; i++) {
         stars.push({
           x: Math.random() * canvas.width,
           y: Math.random() * canvas.height,
           size: Math.random() * (1 - 0.1) + 0.1,
-          baseSpeed: speed,
+          baseSpeed: base,
           drift,
-          offset: Math.random() * 1000, // for organic motion
+          offset: Math.random() * 1000,
         });
       }
       layers.push(stars);
     });
 
+    // VELOCITY SYSTEM (CAPPED)
     let lastScrollY = window.scrollY;
     let velocity = 0;
+    const MAX_VELOCITY = 4; // ⭐ LIMIT THE SPEED BOOST
+    const SMOOTHING = 0.1; // ⭐ smooth slow-down
+
+    const handleScroll = () => {
+      const y = window.scrollY;
+      velocity = (y - lastScrollY);
+      lastScrollY = y;
+
+      // apply velocity clamp
+      if (velocity > MAX_VELOCITY) velocity = MAX_VELOCITY;
+      if (velocity < -MAX_VELOCITY) velocity = -MAX_VELOCITY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      layers.forEach((stars, layerIndex) => {
+      // gradually reduce velocity when not scrolling
+      velocity *= (1 - SMOOTHING);
+
+      layers.forEach((stars, index) => {
         ctx.fillStyle = "white";
 
-        stars.forEach((star, i) => {
-          // scroll velocity → more speed when user scrolls fast
-          const deltaY = star.baseSpeed + velocity * (0.02 + layerIndex * 0.01);
+        stars.forEach((star) => {
+          // BASE SPEED + a tiny velocity effect
+          const parallaxBoost = velocity * (0.15 + index * 0.08);
 
-          star.y += deltaY;
+          star.y += star.baseSpeed + parallaxBoost;
 
-          // organic side drift (sin wave for natural feel)
+          // ORGANIC SIDE DRIFT
           star.x += Math.sin((star.offset + star.y) * 0.001) * star.drift;
 
-          // loop stars vertically
+          // LOOPING
           if (star.y > canvas.height) star.y = 0;
+          if (star.y < 0) star.y = canvas.height;
 
-          // horizontal loop
           if (star.x > canvas.width) star.x = 0;
           if (star.x < 0) star.x = canvas.width;
 
-          // draw
           ctx.beginPath();
           ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
           ctx.fill();
@@ -74,17 +91,9 @@ const BackgroundStars = () => {
 
     draw();
 
-    const handleScroll = () => {
-      const newScrollY = window.scrollY;
-      velocity = newScrollY - lastScrollY; // detect how fast user scrolls
-      lastScrollY = newScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
     return () => {
-      window.removeEventListener("resize", resizeCanvas);
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", resizeCanvas);
     };
   }, []);
 

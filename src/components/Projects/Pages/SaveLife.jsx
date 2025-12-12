@@ -17,7 +17,7 @@ import bento23 from "../../../assets/Projects/Page/Save Life/bento 2.3.png";
 import bento24 from "../../../assets/Projects/Page/Save Life/bento 2.4.png";
 import bento25 from "../../../assets/Projects/Page/Save Life/bento 2.5.png";
 import bento26 from "../../../assets/Projects/Page/Save Life/bento 2.6.png";
-import BackgroundStars from "../../../assets/Home/Banner/BackgroundStars.webp"
+import BackgroundStars from "../../Backgroundsars"
 import OtherProjects from "../../Home/OtherProjects";
 import Rocket from "../../../assets/Projects/Page/Save Life/Rocket-Icon.webp"
 
@@ -42,8 +42,8 @@ function SaveLife() {
     "OVERVIEW",
     "RESEARCH & DATA",
     "PAIN POINTS",
-    "METRICS & OUTCOMES",
     "ROADMAP",
+    "METRICS & OUTCOMES",
     "HIGHLIGHTS",
   ];
 
@@ -87,6 +87,7 @@ function SaveLife() {
       animate="show"
       variants={containerVariants}
     >
+      <BackgroundStars />
       <motion.div className="about-project" variants={itemVariants}>
         <motion.div className="project-header" variants={itemVariants}>
           <div className="project-header-text-and-icon">
@@ -112,8 +113,8 @@ function SaveLife() {
         
         <motion.div className="project-sections-container" variants={itemVariants}>
           <div className="project-overview">
+            <div className="tab-line"></div>
             <div className="project-tabs">
-              <div className="tab-line"></div>
               {tabs.map((tab, index) => (
                 <div
                   key={index}
@@ -434,6 +435,32 @@ function SaveLife() {
                 )}
 
                 {activeTab === 3 && (
+                  <motion.div 
+                    className="timeline-container"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="show"
+                  >
+                    {[
+                      { title: "UX Research & Lo-Fi Wireframes", days: "4 days" },
+                      { title: "Journey Mapping & Wireframes", days: "3 days" },
+                      { title: "Information Architecture", days: "1 day" },
+                      { title: "Design Systems & Components", days: "1 day" },
+                      { title: "Interface Design & Prototyping", days: "7 days" }
+                    ].map((item, idx) => (
+                      <motion.div 
+                        key={idx} 
+                        className="timeline-card"
+                        variants={itemVariants}
+                      >
+                        <p className="title">{item.title}</p>
+                        <p className="days">{item.days}</p>
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                )}
+
+                {activeTab === 4 && (
                   <motion.div
                     className="results-wrapper"
                     variants={containerVariants}
@@ -570,32 +597,6 @@ function SaveLife() {
                         </div>
                       </div>
                     </motion.div>
-                  </motion.div>
-                )}
-
-                {activeTab === 4 && (
-                  <motion.div 
-                    className="timeline-container"
-                    variants={containerVariants}
-                    initial="hidden"
-                    animate="show"
-                  >
-                    {[
-                      { title: "UX Research & Lo-Fi Wireframes", days: "4 days" },
-                      { title: "Journey Mapping & Wireframes", days: "3 days" },
-                      { title: "Information Architecture", days: "1 day" },
-                      { title: "Design Systems & Components", days: "1 day" },
-                      { title: "Interface Design & Prototyping", days: "7 days" }
-                    ].map((item, idx) => (
-                      <motion.div 
-                        key={idx} 
-                        className="timeline-card"
-                        variants={itemVariants}
-                      >
-                        <p className="title">{item.title}</p>
-                        <p className="days">{item.days}</p>
-                      </motion.div>
-                    ))}
                   </motion.div>
                 )}
 
