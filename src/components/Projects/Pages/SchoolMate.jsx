@@ -21,6 +21,7 @@ import bento26 from "../../../asset/Projects/Page/School Mate/bento 2.6.webp";
 import bento27 from "../../../asset/Projects/Page/School Mate/bento 2.7.webp";
 import BackgroundStars from "../../Backgroundsars";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
+import OtherCaseStudies from "../../Home/OtherCaseStudies";
 
 function SchoolMate() {
   const [activeTab, setActiveTab] = useState(0);
@@ -668,15 +669,7 @@ function SchoolMate() {
           <img src={bento27} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/226624971/School-Bus-Tracker-App"
-          target="_blank"
-        >
-          School Mate
-        </a>
-      </div>
+      <OtherCaseStudies currentProject="schoolmate" />
     </motion.div>
   );
 }

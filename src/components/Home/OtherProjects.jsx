@@ -1,13 +1,9 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import OtherProjectsBackground from "../../asset/Home/OtherProjects/OtherProjectHeaderBackground.webp";
-import SchoolMate from "../../asset/Home/Projects/School Mate.webp";
-import SchoolMateGlow from "../../asset/Home/Projects/School Mate Background Glow.webp";
+import YouTube from "../../asset/Projects/ProjectsList/YouTube.webp";
+import YouTubeBackgroundGlow from "../../asset/Projects/ProjectsList/YouTube Background Glow.webp";
 import { Link } from "react-router-dom";
-import QEasy from "../../asset/Home/Projects/Q Easy.webp";
-import QEasyGlow from "../../asset/Home/Projects/Q Easy Background Glow.webp";
-import GoogleClassroom from "../../asset/Home/Projects/Google Classroom.webp";
-import GoogleClassroomBackgroundGlow from "../../asset/Home/Projects/Google Classroom Background Glow.webp";
 import CanvasCode from "../../asset/Home/Projects/Canvas & Code.webp";
 import CanvasCodeBackgroundGlow from "../../asset/Home/Projects/Canvas & Code Background Glow.webp";
 import OlliePets from "../../asset/Home/Projects/Ollie Pets.webp";
@@ -15,8 +11,87 @@ import OlliePetsBackgroundGlow from "../../asset/Home/Projects/Ollie Pets Backgr
 import OtherProjectsMobileBackground from "../../asset/Home/OtherProjects/OtherProjectsobileBackground.webp";
 import ArrowFwd from "../../asset/Home/OtherProjects/arrow_forward.webp";
 import ArrowBwd from "../../asset/Home/OtherProjects/arrow_backward.webp";
+import RentMyRide from "../../asset/Projects/ProjectsList/Rent My Ride.webp";
+import RentMyRideBackgroundGlow from "../../asset/Projects/ProjectsList/Rent My Ride Background Glow.webp";
+import WhatsApp from "../../asset/Projects/ProjectsList/WhatsApp.webp";
+import WhatsAppBackgroundGlow from "../../asset/Projects/ProjectsList/WhatsApp Background Glow.webp";
+import UrbanMonkey from "../../asset/Projects/ProjectsList/Urban Monkey.webp";
+import UrbanMonkeyBackgroundGlow from "../../asset/Projects/ProjectsList/Urban Monkey Background Glow.webp";
+import Coolzee from "../../asset/Projects/ProjectsList/Coolzee.webp";
+import CoolzeeBackgroundGlow from "../../asset/Projects/ProjectsList/Coolzee Background Glow.webp";
 
-const OtherProjects = () => {
+const OtherProjects = ({ currentProject }) => {
+
+  const projects = [
+  {
+    id: "rentmyride",
+    link: "/projects/rent_my_ride",
+    title: "Rent My Ride",
+    year: "2023",
+    type: "Mobile Application",
+    img: RentMyRide,
+    glow: RentMyRideBackgroundGlow,
+  },
+  {
+    id: "canvasandcode",
+    link: "/projects/canvas_and_code",
+    title: "Canvas & Code",
+    year: "2023",
+    type: "Website Design",
+    img: CanvasCode,
+    glow: CanvasCodeBackgroundGlow,
+  },
+  {
+    id: "olliepets",
+    link: "/projects/ollie_pets",
+    title: "Ollie Pets",
+    year: "2023",
+    type: "Website Design",
+    img: OlliePets,
+    glow: OlliePetsBackgroundGlow,
+  },
+  {
+    id: "youtube",
+    link: "/projects/youtube",
+    title: "YouTube",
+    year: "2023",
+    type: "Mobile Application",
+    img: YouTube,
+    glow: YouTubeBackgroundGlow,
+  },
+  {
+    id: "whatsapp",
+    link: "/projects/whatsApp",
+    title: "WhatsApp",
+    year: "2023",
+    type: "Mobile Application",
+    img: WhatsApp,
+    glow: WhatsAppBackgroundGlow,
+  },
+  {
+    id: "urbanmonkey",
+    link: "/projects/urban_monkey",
+    title: "Urban Monkey",
+    year: "2023",
+    type: "Website Design",
+    img: UrbanMonkey,
+    glow: UrbanMonkeyBackgroundGlow,
+  },
+  {
+    id: "coolzee",
+    link: "/projects/coolzee",
+    title: "Coolzee",
+    year: "2023",
+    type: "Mobile Application",
+    img: Coolzee,
+    glow: CoolzeeBackgroundGlow,
+  },
+  ];
+  
+  const filteredProjects = projects.filter(
+  (project) => project.id !== currentProject
+);
+
   const container = { hidden: { opacity: 0 }, show: { opacity: 1, transition: { staggerChildren: 0.25 } } };
   const item = { hidden: { opacity: 0, y: 20, filter: "blur(10px)" }, show: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.8, ease: "easeOut" } } };
 
@@ -45,31 +120,22 @@ const OtherProjects = () => {
 
         <div className="showcase-carousel" id="carousel">
           <div style={{ minWidth: "400px" }}></div>
+          {filteredProjects.map((project) => (
+            <Link className="showcase-card" to={project.link} key={project.id}>
+              <div className="showcase-img">
+                <img src={project.img} className="main-img" />
+                <img src={project.glow} className="glow-img" />
+              </div>
 
-          <Link className="showcase-card" to="/projects/school_mate">
-            <div className="showcase-img"><img src={SchoolMate} className="main-img" alt="" /><img src={SchoolMateGlow} className="glow-img" alt="" /></div>
-            <div className="showcase-info"><p>Mobile Application</p><section><h3>School Mate</h3><sub>2025</sub></section></div>
-          </Link>
-
-          <Link className="showcase-card" to="/projects/q_easy">
-            <div className="showcase-img"><img src={QEasy} className="main-img" alt="" /><img src={QEasyGlow} className="glow-img" alt="" /></div>
-            <div className="showcase-info"><p>Mobile Application</p><section><h3>Q Easy</h3><sub>2025</sub></section></div>
-          </Link>
-
-          <Link className="showcase-card" to="/projects/google_classroom">
-            <div className="showcase-img"><img src={GoogleClassroom} className="main-img" alt="" /><img src={GoogleClassroomBackgroundGlow} className="glow-img" alt="" /></div>
-            <div className="showcase-info"><p>Mobile Application</p><section><h3>Google Classroom</h3><sub>2023</sub></section></div>
-          </Link>
-
-          <Link className="showcase-card" to="/projects/canvas_and_code">
-            <div className="showcase-img"><img src={CanvasCode} className="main-img" alt="" /><img src={CanvasCodeBackgroundGlow} className="glow-img" alt="" /></div>
-            <div className="showcase-info"><p>Website Design</p><section><h3>Canvas & Code</h3><sub>2023</sub></section></div>
-          </Link>
-
-          <Link className="showcase-card" to="/projects/ollie_pets">
-            <div className="showcase-img"><img src={OlliePets} className="main-img" alt="" /><img src={OlliePetsBackgroundGlow} className="glow-img" alt="" /></div>
-            <div className="showcase-info"><p>Website Design</p><section><h3>Ollie Pets</h3><sub>2023</sub></section></div>
-          </Link>
+              <div className="showcase-info">
+                <p>{project.type}</p>
+                <section>
+                  <h3>{project.title}</h3>
+                  <sub>{project.year}</sub>
+                </section>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

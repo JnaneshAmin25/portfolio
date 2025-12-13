@@ -1,12 +1,42 @@
 import "./GlobeExperiance.css"
+import { useEffect, useRef, useState } from "react";
 
 const GlobeExperiance = () => {
+  const titleRef = useRef(null);
+  const [animateMonth, setAnimateMonth] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimateMonth(true);
+          observer.disconnect(); // fire once, stay classy
+        }
+      },
+      {
+        root: null,
+        threshold: 0,
+        rootMargin: "0px 0px -20% 0px", // bottom 20%
+      }
+    );
+
+    if (titleRef.current) observer.observe(titleRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <div className="globe-exp-wrapper">
-        <div className="globe-header-container">
+        <div className="globe-header-container" ref={titleRef}>
           <h2 className="industries-title">
-            2 Years 10 Months
+            2 Years <span className="month-wrapper">
+              <span className={`month-track ${animateMonth ? "animate" : ""}`}>
+
+                <span className="month prev">09</span>
+                <span className="month curr">10</span>
+              </span>
+            </span> Months
           </h2>
           <p>AND GROWING</p>
         </div>

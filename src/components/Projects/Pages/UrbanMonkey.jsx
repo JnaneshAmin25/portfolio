@@ -7,7 +7,7 @@ import mobilebanner from "../../../asset/Projects/Page/Urban Monkey/mobile banne
 import toolused from "../../../asset/Projects/Page/Urban Monkey/tool used.webp";
 import overviewimg from "../../../asset/Projects/Page/Urban Monkey/overview img.webp";
 import thirdbanner2 from "../../../asset/Projects/Page/Urban Monkey/third banner 2.webp";
-
+import OtherProjects from "../../Home/OtherProjects";
 
 function UrbanMonkey() {
 
@@ -164,15 +164,7 @@ function UrbanMonkey() {
       <div className="project-second-banner">
         <img src={thirdbanner2} />
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/184248049/Ecommerce-Fashion-Website-Redesign"
-          target="_blank"
-        >
-          Urban Monkey
-        </a>
-      </div>
+      <OtherProjects currentProject="urbanmonkey" />
     </motion.div>
   );
 }

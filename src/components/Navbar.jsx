@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
+
 import { Link } from "react-router-dom";
 import Resume from "/Abhay Nayak's CV.pdf";
 import Menu from "../asset/Navbar/menu.webp";
@@ -8,6 +9,38 @@ import Arrow from "../asset/Navbar/arrow.webp";
 function Navbar() {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [hasToggled, setHasToggled] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const lastScrollY = useRef(0);
+  const hideTimeout = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // scrolling down → hide immediately
+      if (currentScrollY > lastScrollY.current) {
+        setShowNavbar(false);
+        if (hideTimeout.current) clearTimeout(hideTimeout.current);
+      }
+      // scrolling up → show, then auto-hide
+      else {
+        setShowNavbar(true);
+
+        if (hideTimeout.current) clearTimeout(hideTimeout.current);
+        
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (hideTimeout.current) clearTimeout(hideTimeout.current);
+    };
+  }, []);
+
+
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -21,7 +54,7 @@ function Navbar() {
   };
 
   return (
-    <header>
+    <header style={{ transform: showNavbar ? "translateY(0)" : "translateY(-120%)", transition: " all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",}}>
       <section>
         <Link to="/" className="navbar-logo" onClick={handleLinkClick}>
           <p>Abhay Nayak</p>

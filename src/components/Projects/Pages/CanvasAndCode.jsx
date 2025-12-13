@@ -11,6 +11,7 @@ import mobilesecondbanner from "../../../asset/Projects/Page/Canvas And Code/mob
 import thirdbanner1 from "../../../asset/Projects/Page/Canvas And Code/third banner 1.webp";
 import mobilethirdbanner1 from "../../../asset/Projects/Page/Canvas And Code/mobile third banner 1.webp";
 import thirdbanner2 from "../../../asset/Projects/Page/Canvas And Code/third banner 2.webp";
+import OtherProjects from "../../Home/OtherProjects";
 
 function CanvasAndCode() {
      const roles = [
@@ -165,15 +166,7 @@ function CanvasAndCode() {
       <div className="project-second-banner">
         <img src={thirdbanner2} />
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/210955561/Canvas-Code-Web-Design"
-          target="_blank"
-        >
-          Canvas & Code
-        </a>
-      </div>
+      <OtherProjects currentProject="canvasandcode" />
     </motion.div>
   );
 }

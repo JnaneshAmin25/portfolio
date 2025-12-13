@@ -25,6 +25,7 @@ import bento26 from "../../../asset/Projects/Page/Aarogya Guru/bento 2.6.webp";
 import bento27 from "../../../asset/Projects/Page/Aarogya Guru/bento 2.7.webp";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 import BackgroundStars from "../../Backgroundsars"
+import OtherCaseStudies from "../../Home/OtherCaseStudies";
 
 function AarogyaGuru() {
   const [activeTab, setActiveTab] = useState(0);
@@ -681,15 +682,7 @@ function AarogyaGuru() {
           <img src={bento27} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/183650451/Health-Appointment-App-UIUX-Design"
-          target="_blank"
-        >
-          Aarogya Guru
-        </a>
-      </div>
+      <OtherCaseStudies current="aarogyaguru" />
     </motion.div>
   );
 }

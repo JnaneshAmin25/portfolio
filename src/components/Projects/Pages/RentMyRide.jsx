@@ -15,9 +15,9 @@ import bento23 from "../../../asset/Projects/Page/Rent My Ride/bento 2.3.webp";
 import bento24 from "../../../asset/Projects/Page/Rent My Ride/bento 2.4.webp";
 import bento25 from "../../../asset/Projects/Page/Rent My Ride/bento 2.5.webp";
 import BackgroundStars from "../../Backgroundsars"
+import OtherProjects from "../..//Home/OtherProjects";
 
 function RentMyRide() {
-
   const roles = [
       "UX Research",
       "UX Flow",
@@ -183,15 +183,8 @@ function RentMyRide() {
           <img src={bento25} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/182024727/Booking-App-UIUX-Design"
-          target="_blank"
-        >
-          Rent My Ride
-        </a>
-      </div>
+      <OtherProjects currentProject="rentmyride" />
+
     </motion.div>
   );
 }

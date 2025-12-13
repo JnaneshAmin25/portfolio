@@ -23,6 +23,7 @@ import bento25 from "../../../asset/Projects/Page/Google Classroom/bento 2.5.web
 import bento26 from "../../../asset/Projects/Page/Google Classroom/bento 2.6.webp";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 import BackgroundStars from "../../Backgroundsars"
+import OtherCaseStudies from "../../Home/OtherCaseStudies";
 
 function GoogleClassroom() {
    const [activeTab, setActiveTab] = useState(0);
@@ -682,15 +683,7 @@ function GoogleClassroom() {
           <img src={bento26} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/176667599/Google-Classroom-UIUX-Redesign-Case-Study"
-          target="_blank"
-        >
-          Google Classroom
-        </a>
-      </div>
+      <OtherCaseStudies currentProject="googleclassroom" />
     </motion.div>
   );
 }

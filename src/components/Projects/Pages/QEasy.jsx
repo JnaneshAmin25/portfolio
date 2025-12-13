@@ -15,6 +15,7 @@ import bento23 from "../../../asset/Projects/Page/Q Easy/bento 2.3.webp";
 import bento24 from "../../../asset/Projects/Page/Q Easy/bento 2.4.webp";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 import BackgroundStars from "../../Backgroundsars"
+import OtherCaseStudies from "../../Home/OtherCaseStudies";
 
 function QEasy() {
   const [activeTab, setActiveTab] = useState(0);
@@ -662,15 +663,7 @@ function QEasy() {
           <img src={bento24} />
         </div>
       </div>
-      <div className="project-link">
-        <h3>More on the Project</h3>
-        <a
-          href="https://www.behance.net/gallery/226091977/QEasy-Digital-Queue-Management-App"
-          target="_blank"
-        >
-          Q Easy
-        </a>
-      </div>
+      <OtherCaseStudies currentProject="qeasy" />
     </motion.div>
   );
 }

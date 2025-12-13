@@ -7,24 +7,10 @@ import QEasy from "../../asset/Projects/ProjectsList/Q Easy.webp";
 import QEasyGlow from "../../asset/Projects/ProjectsList/Q Easy Background Glow.webp";
 import GoogleClassroom from "../../asset/Projects/ProjectsList/Google Classroom.webp";
 import GoogleClassroomBackgroundGlow from "../../asset/Projects/ProjectsList/Google Classroom Background Glow.webp";
-import RentMyRide from "../../asset/Projects/ProjectsList/Rent My Ride.webp";
-import RentMyRideBackgroundGlow from "../../asset/Projects/ProjectsList/Rent My Ride Background Glow.webp";
 import KITE from "../../asset/Projects/ProjectsList/KITE.webp";
 import KITEBackgroundGlow from "../../asset/Projects/ProjectsList/KITE Background Glow.webp";
-import CanvasCode from "../../asset/Projects/ProjectsList/Canvas & Code.webp";
-import CanvasCodeBackgroundGlow from "../../asset/Projects/ProjectsList/Canvas & Code Background Glow.webp";
-import OlliePets from "../../asset/Projects/ProjectsList/Ollie Pets.webp";
-import OlliePetsBackgroundGlow from "../../asset/Projects/ProjectsList/Ollie Pets Background Glow.webp";
 import AarogyaGuru from "../../asset/Projects/ProjectsList/Aarogya Guru.webp";
 import AarogyaGuruBackgroundGlow from "../../asset/Projects/ProjectsList/Aarogya Guru Background Glow.webp";
-import WhatsApp from "../../asset/Projects/ProjectsList/WhatsApp.webp";
-import WhatsAppBackgroundGlow from "../../asset/Projects/ProjectsList/WhatsApp Background Glow.webp";
-import YouTube from "../../asset/Projects/ProjectsList/YouTube.webp";
-import YouTubeBackgroundGlow from "../../asset/Projects/ProjectsList/YouTube Background Glow.webp";
-import UrbanMonkey from "../../asset/Projects/ProjectsList/Urban Monkey.webp";
-import UrbanMonkeyBackgroundGlow from "../../asset/Projects/ProjectsList/Urban Monkey Background Glow.webp";
-import Coolzee from "../../asset/Projects/ProjectsList/Coolzee.webp";
-import CoolzeeBackgroundGlow from "../../asset/Projects/ProjectsList/Coolzee Background Glow.webp";
 import SaveLife from "../../asset/Projects/ProjectsList/Save Life.webp";
 import SaveLifeBackgroundGlow from "../../asset/Projects/ProjectsList/Save Life Background Glow.webp";
 import DesktopProjectFade from "../../asset/Home/Projects/DesktopProjectFade.webp"
@@ -260,58 +246,6 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/rent_my_ride">
-          <div className="projects-set-img">
-            <img src={RentMyRide} className="main-img" />
-            <img src={RentMyRideBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Rent My Ride</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/kite_by_zerodha">
-          <div className="projects-set-img">
-            <img src={KITE} className="main-img" />
-            <img src={KITEBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Kite by Zerodha</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/canvas_and_code">
-          <div className="projects-set-img">
-            <img src={CanvasCode} className="main-img" />
-            <img src={CanvasCodeBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Website Design</p>
-            <section>
-              <h3>Canvas & Code</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/ollie_pets">
-          <div className="projects-set-img">
-            <img src={OlliePets} className="main-img" />
-            <img src={OlliePetsBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Website Design</p>
-            <section>
-              <h3>Ollie Pets</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
         <Link className="projects-set" to="/projects/aarogya_guru">
           <div className="projects-set-img">
             <img src={AarogyaGuru} className="main-img" />
@@ -325,54 +259,15 @@ function Projects() {
             </section>
           </div>
         </Link>
-        <Link className="projects-set" to="/projects/whatsApp">
+        <Link className="projects-set" to="/projects/kite_by_zerodha">
           <div className="projects-set-img">
-            <img src={WhatsApp} className="main-img" />
-            <img src={WhatsAppBackgroundGlow} className="glow-img" />
+            <img src={KITE} className="main-img" />
+            <img src={KITEBackgroundGlow} className="glow-img" />
           </div>
           <div className="projects-set-text">
             <p>Mobile Application</p>
             <section>
-              <h3>WhatsApp</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/youtube">
-          <div className="projects-set-img">
-            <img src={YouTube} className="main-img" />
-            <img src={YouTubeBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>YouTube</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/urban_monkey">
-          <div className="projects-set-img">
-            <img src={UrbanMonkey} className="main-img" />
-            <img src={UrbanMonkeyBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Website Design</p>
-            <section>
-              <h3>Urban Monkey</h3>
-              <sub>2023</sub>
-            </section>
-          </div>
-        </Link>
-        <Link className="projects-set" to="/projects/coolzee">
-          <div className="projects-set-img">
-            <img src={Coolzee} className="main-img" />
-            <img src={CoolzeeBackgroundGlow} className="glow-img" />
-          </div>
-          <div className="projects-set-text">
-            <p>Mobile Application</p>
-            <section>
-              <h3>Coolzee</h3>
+              <h3>Kite by Zerodha</h3>
               <sub>2023</sub>
             </section>
           </div>

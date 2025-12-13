@@ -18,7 +18,7 @@ import bento24 from "../../../asset/Projects/Page/Save Life/bento 2.4.webp";
 import bento25 from "../../../asset/Projects/Page/Save Life/bento 2.5.webp";
 import bento26 from "../../../asset/Projects/Page/Save Life/bento 2.6.webp";
 import BackgroundStars from "../../Backgroundsars"
-import OtherProjects from "../../Home/OtherProjects";
+import OtherCaseStudies from "../../Home/OtherCaseStudies";
 import Rocket from "../../../asset/Projects/Page/Save Life/Rocket-Icon.webp"
 
 function SaveLife() {
@@ -673,7 +673,7 @@ function SaveLife() {
         </div>
       </div>
       
-      <OtherProjects />
+      <OtherCaseStudies currentProject="savelife" />
     </motion.div>
   );
 }
