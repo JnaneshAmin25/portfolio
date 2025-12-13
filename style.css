@@ -1820,6 +1820,8 @@ header nav {
   border-radius: 100px;
   border: 1px solid #2c2c2c;
   background: rgba(49, 49, 49, 0.2);
+  font-variant-numeric: lining-nums proportional-nums;
+    font-style: normal;
 }
 
 .project-header-banner {
@@ -1926,7 +1928,7 @@ header nav {
     position: sticky;
     background: #111111;
     top: 64px;
-    z-index: 10;
+    z-index: 100;
   }
   
   .tab-item {
@@ -2228,7 +2230,6 @@ header nav {
   gap: 10px;
   padding-bottom: 300px;
   
-  /* Count of cards (adjust only this if you add/remove cards) */
   --total-items: 5;
 }
 
@@ -2242,7 +2243,7 @@ header nav {
   transition: 0.25s ease;
   font-family: Raleway;
   margin-left: calc(
-    (var(--index) / (var(--total-items) - 1)) * (100% - 300px)
+    (var(--index) / (var(--total-items) - 1)) * (100% - 400px)
   );
 }
 
@@ -2265,6 +2266,7 @@ header nav {
 .timeline-card:nth-child(3) { --index: 2; }
 .timeline-card:nth-child(4) { --index: 3; }
 .timeline-card:nth-child(5) { --index: 4; }
+.timeline-card:nth-child(6) { --index: 5; }
 
 
 .feature-wrapper{

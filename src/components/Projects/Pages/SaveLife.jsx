@@ -102,7 +102,10 @@ function SaveLife() {
             </div>
             <div className="project-header-text">
               <h2>Save Life</h2>
-              <p>Mobile Application</p>
+              <div style={{display: "flex", gap: "5px"}}>
+                <p>Mobile Application</p>
+                <p>2025</p>
+              </div>
             </div>
           </div>
           <div className="project-header-banner">
@@ -153,7 +156,7 @@ function SaveLife() {
                       <div className="project-overview-set">
                         <h3>PROJECT OVERVIEW</h3>
                         <p>
-                          SaveLife is a community-driven blood donation app designed to simplify and accelerate the process of finding blood during emergencies. The platform connects people in urgent need with nearby verified donors, offering real-time availability, distance-based results, and one-tap calling or messaging. Unlike many existing solutions that are outdated, region-limited, or cluttered, SaveLife 
+                          SaveLife is a community-driven blood donation app designed to simplify and accelerate the process of finding blood during emergencies. The platform connects people in urgent need with nearby verified donors, offering real-time availability, distance-based results, and one-tap calling or messaging. Unlike many existing solutions that are outdated, region-limited, or cluttered. 
                         </p>
                       </div>
                       <div className="project-overview-set">
@@ -347,17 +350,17 @@ function SaveLife() {
 
                         <div className="insight-list">
                           {[
-                            { title: "Emergency Dependence", text: "Too many manual steps that depend on human availability" },
-                            { title: "High Panic", text: "Slow response times and unpredictable wait cycles" },
-                            { title: "Lack of Trust", text: "Information is scattered across calls, messages, and people" },
-                            { title: "Fear of Eligibility Confusion", text: "Users have to do the work instead of the system doing it for them" }
+                            { title: "Slow Emergency Response", text: "Delays occur because people rely on manual calls and networks" },
+                            { title: "Trust Uncertainity", text: "Users hesitate due to unclear donor verification and unreliable info." },
+                            { title: "Eligibility Confusion", text: "People are unsure when, how, or whether they can safely donate." },
+                            { title: "Information Overload", text: "Emergency instructions, donor options appear messy" }
                           ].map((insight, idx) => (
                             <motion.div
                               key={idx}
-                              className="insight-card"
+                              className="insight-card"                 
                               variants={itemVariants}
                             >
-                              <h4>{insight.title}</h4>
+                              <h4>{insight.title}</h4> 
                               <p>{insight.text}</p>
                             </motion.div>
                           ))}
@@ -369,14 +372,14 @@ function SaveLife() {
                     <motion.div className="research-grid" variants={itemVariants}>
                       {/* CARD 3 */}
                       <div className="project-overview-set">
-                        <h3>BLOOD SHORTAGES IN INDIA</h3>
+                        <h3>EMOTIONAL BARIERS</h3>
 
                         <div className="bar-group">
                           {[
-                            { width: "68%", label: "68%", text: "Anxious due to 'no visibility'." },
-                            { width: "52%", label: "52%", text: "Panic during urgent situations." },
-                            { width: "52%", label: "52%", text: "Panic during urgent situations." },
-                            { width: "10%", label: "52%", text: "Panic during urgent situations." }
+                            { width: "34%", label: "34%", text: "Time Pressure" },
+                            { width: "28%", label: "28%", text: "Mental Load" },
+                            { width: "22%", label: "22%", text: "Uncertainity Stress" },
+                            { width: "16%", label: "16%", text: "Dependency Delays" }
                           ].map((bar, idx) => (
                             <motion.div
                               key={idx}
@@ -402,12 +405,12 @@ function SaveLife() {
 
                       {/* CARD 4 */}
                       <div className="project-overview-set">
-                        <h3>BLOOD SHORTAGES IN INDIA</h3>
+                        <h3>FEAR FACTORS</h3>
 
                         <div className="bar-group">
                           {[
                             { width: "68%", label: "68%", text: "Anxious due to 'no visibility'." },
-                            { width: "10%", label: "52%", text: "Panic during urgent situations." }
+                            { width: "52%", label: "52%", text: "Panic during urgent situations." }
                           ].map((bar, idx) => (
                             <motion.div
                               key={idx}
