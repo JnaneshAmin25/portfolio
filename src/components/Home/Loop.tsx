@@ -2,27 +2,51 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import ArrowForward from "../../asset/Home/OtherProjects/arrow_forward.webp";
 import ArrowBackward from "../../asset/Home/OtherProjects/arrow_backward.webp";
-import Phone from "../../asset/Home/OtherProjects/phone.webp";
 import LoopBackground from "../../asset/Home/Loop/LoopBackground.webp";
+import Kite from "../../asset/Home/Marquee/HomeLoop/Kite.webp";
+import Arogya from "../../asset/Home/Marquee/HomeLoop/ArogyaGuru.webp";
+import Canvas from "../../asset/Home/Marquee/HomeLoop/CanvasAndCode.webp";
+import Coolze from "../../asset/Home/Marquee/HomeLoop/Coolze.webp";
+import Classroom from "../../asset/Home/Marquee/HomeLoop/GoogleClassroom.webp";
+import OliePets from "../../asset/Home/Marquee/HomeLoop/OliePets.webp";
+import Qeasy from "../../asset/Home/Marquee/HomeLoop/Qeasy.webp";
+import SaveLife from "../../asset/Home/Marquee/HomeLoop/Save.webp";
+import SchoolMate from "../../asset/Home/Marquee/HomeLoop/ScoolMate.webp";
+import Urban from "../../asset/Home/Marquee/HomeLoop/UrbanMonkey.webp";
+import Whatsapp from "../../asset/Home/Marquee/HomeLoop/Whatsapp.webp";
+import Youtube from "../../asset/Home/Marquee/HomeLoop/Youtube.webp";
 
 const Loop = () => {
   const slides = [
-    { title: "Rent My Ride", subtitle: "Mobile Application, 2023", img: Phone },
-    { title: "Travel Buddy", subtitle: "Mobile Application, 2024", img: Phone },
-    { title: "Foodify", subtitle: "Mobile Application, 2024", img: Phone },
+    { title: "Save Life", subtitle: "Mobile Application, 2025", img: SaveLife },
+    { title: "School Mate", subtitle: "Mobile Application, 2025", img: SchoolMate },
+    { title: "Q Easy", subtitle: "Mobile Application, 2025", img: Qeasy },
+    { title: "Arogya Guru", subtitle: "Mobile Application, 2025", img: Arogya },
+    { title: "Kite By Zeroda", subtitle: "Mobile Application, 2023", img: Kite },
+    { title: "Google Classroom", subtitle: "Mobile Application, 2023", img: Classroom },
+    { title: "Whatsapp", subtitle: "Mobile Application, 2023", img: Whatsapp },
+    { title: "Youtube", subtitle: "Mobile Application, 2023", img: Youtube },
+    { title: "Coolze", subtitle: "Mobile Application, 2023", img: Coolze },
+    { title: "Urban Monkey", subtitle: "Website Design, 2023", img: Urban },
+    { title: "Canvas & Code", subtitle: "Website Design, 2024", img: Canvas },
+    { title: "Ollie pets", subtitle: "Website Design, 2023", img: OliePets },
   ];
 
-  const [index, setIndex] = React.useState(0);
-  const [direction, setDirection] = React.useState(0); // -1 = backward, 1 = forward
+  /* 🔑 FIX: index + direction as one atomic state */
+  const [[index, direction], setPage] = React.useState([0, 0]);
 
   const nextSlide = () => {
-    setDirection(1);
-    setIndex((prev) => (prev + 1) % slides.length);
+    setPage(([prevIndex]) => [
+      (prevIndex + 1) % slides.length,
+      1,
+    ]);
   };
 
   const prevSlide = () => {
-    setDirection(-1);
-    setIndex((prev) => (prev - 1 + slides.length) % slides.length);
+    setPage(([prevIndex]) => [
+      (prevIndex - 1 + slides.length) % slides.length,
+      -1,
+    ]);
   };
 
   // === Scroll animation setup ===
@@ -36,7 +60,7 @@ const Loop = () => {
   const contentOpacity = useTransform(scrollYProgress, [0.15, 0.4], [0, 1]);
   const contentY = useTransform(scrollYProgress, [0.15, 0.4], [40, 0]);
 
-  // Carousel directional variants
+  // Carousel directional variants (unchanged)
   const imageVariants = {
     enter: (dir) => ({
       x: dir === 1 ? 150 : -150,
@@ -67,14 +91,11 @@ const Loop = () => {
         style={{ opacity: bgOpacity }}
       />
 
-      {/* Sticky Content Zone */}
+      {/* Sticky Content */}
       <div className="loop-sticky-wrapper">
         <motion.div
-          style={{
-            opacity: contentOpacity,
-            y: contentY,
-          }}
           className="loop-inner-content"
+          style={{ opacity: contentOpacity, y: contentY }}
         >
           <div className="top-row">
             <h1 className="loop-heading">
@@ -90,26 +111,31 @@ const Loop = () => {
           </div>
 
           <div className="carousel-section">
-            {/* AnimatePresence for directional enter/exit */}
-            <div style={{ position: "relative", width: "100%", height: "auto", display: "flex", justifyContent: "center" }}>
-              <AnimatePresence mode="wait">
+            <div
+              style={{
+                position: "relative",
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <AnimatePresence mode="wait" custom={direction}>
                 <motion.img
                   key={index}
                   src={slides[index].img}
-                  className="carousel-img"
                   alt="slide"
+                  className="carousel-img"
                   custom={direction}
                   variants={imageVariants}
                   initial="enter"
                   animate="center"
                   exit="exit"
-                  style={{ position: "relative", zIndex: 3 }}
                 />
               </AnimatePresence>
             </div>
 
             <div className="title-row">
-              <button onClick={prevSlide} className="arrow-btn small-btn" aria-label="Previous slide">
+              <button onClick={prevSlide} className="arrow-btn small-btn">
                 <img src={ArrowBackward} alt="" />
               </button>
 
@@ -118,7 +144,7 @@ const Loop = () => {
                 <p className="slide-sub">{slides[index].subtitle}</p>
               </div>
 
-              <button onClick={nextSlide} className="arrow-btn small-btn" aria-label="Next slide">
+              <button onClick={nextSlide} className="arrow-btn small-btn">
                 <img src={ArrowForward} alt="" />
               </button>
             </div>

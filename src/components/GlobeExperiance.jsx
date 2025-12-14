@@ -10,13 +10,13 @@ const GlobeExperiance = () => {
       ([entry]) => {
         if (entry.isIntersecting) {
           setAnimateMonth(true);
-          observer.disconnect(); // fire once, stay classy
+          observer.disconnect(); 
         }
       },
       {
         root: null,
         threshold: 0,
-        rootMargin: "0px 0px -20% 0px", // bottom 20%
+        rootMargin: "0px 0px -20% 0px", 
       }
     );
 
@@ -32,7 +32,6 @@ const GlobeExperiance = () => {
           <h2 className="industries-title">
             2 Years <span className="month-wrapper">
               <span className={`month-track ${animateMonth ? "animate" : ""}`}>
-
                 <span className="month prev">09</span>
                 <span className="month curr">10</span>
               </span>
