@@ -4123,19 +4123,13 @@ footer.footer {
     gap: 15px;
     padding: 0 20px;
   }
-
-  /* .home-banner-container-main section p {
-    max-width: 600px;
-    margin: auto;
-    color: rgba(233, 232, 232, 0.74);
-    text-align: center;
-    font-family: Raleway;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 90%; /* 21.6px */
+  .home-banner-container-main section p {
+    font-size: 18px;
+    color: #999999;
+    font-weight: 500;
     letter-spacing: -4%;
-  } */
+    max-width: 520px;
+  }
 
   .home-banner-scroll-text {
     height: auto;
