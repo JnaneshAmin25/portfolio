@@ -1,4 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+/* eslint-disable no-unused-vars */
+import React, { useRef, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 const uxSkills = [
   "User Research",
@@ -22,48 +24,52 @@ const uiSkills = [
   "Micro Animations",
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.25 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 0.8, ease: "easeOut" },
+  },
+};
+
 const Skills = () => {
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-
-    return () => observer.disconnect();
-  }, []);
+  useEffect(() =>
+  { const observer = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) { setIsVisible(true); observer.unobserve(entry.target); } }, { threshold: 0.2 }); if (sectionRef.current) observer.observe(sectionRef.current); return () => observer.disconnect(); }, []);
 
   return (
-    <div
-      ref={sectionRef}
-      className={`skills-section fade-section ${isVisible ? "visible" : ""}`}
-    >
-      {/* <img
-        className="home-banner-background-stars"
-        src={SkillStarBackground}
-        alt="Background"
-      /> */}
+    <div ref={sectionRef} className="skills-section">
+      
+      <motion.div
+        className="projects-heading"
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.3 }}
+      >
+        <motion.h2 variants={item}>
+          Skills That Shape <br /> My Work
+        </motion.h2>
 
-      {/* Heading */}
-      <div className={`projects-heading fade-delay ${isVisible ? "visible" : ""}`}>
-        <h2>Skills That Shape <br /> My Work</h2>
-        <p>
+        <motion.p variants={item}>
           A mix of UX strategy, UI craft, and visual design expertise shaping every
           project.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
       {/* UX Skills */}
-      <div className={`skills-block fade-delay ${isVisible ? "visible" : ""}`} style={{ transitionDelay: "200ms" }}>
+      <div className="skills-block">
         <h4 className="skill-category-title">UX SKILLS</h4>
 
         <div className="industries-list">
@@ -73,10 +79,9 @@ const Skills = () => {
 
           {uxSkills.map((item, idx) => (
             <div
-              key={idx}
-              className={`industry-item fade-delay ${isVisible ? "visible" : ""}`}
-              style={{ transitionDelay: `${300 + idx * 80}ms` }}
-            >
+                className={`industry-item fade-delay ${isVisible ? "visible" : ""}`}
+                style={{ transitionDelay: `${300 + idx * 80}ms` }}
+              >
               <div className="top-orange-blur"></div>
               {item}
               <div className="bottom-purple-blur"></div>
@@ -86,16 +91,15 @@ const Skills = () => {
       </div>
 
       {/* UI Skills */}
-      <div className={`skills-block fade-delay ${isVisible ? "visible" : ""}`} style={{ transitionDelay: "300ms" }}>
+      <div className="skills-block">
         <h4 className="skill-category-title">UI SKILLS</h4>
 
         <div className="industries-list">
           {uiSkills.map((item, idx) => (
             <div
-              key={idx}
-              className={`industry-item fade-delay ${isVisible ? "visible" : ""}`}
-              style={{ transitionDelay: `${400 + idx * 80}ms` }}
-            >
+                className={`industry-item fade-delay ${isVisible ? "visible" : ""}`}
+                style={{ transitionDelay: `${300 + idx * 80}ms` }}
+              >
               <div className="top-orange-blur"></div>
               {item}
               <div className="bottom-purple-blur"></div>
@@ -103,6 +107,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
+
     </div>
   );
 };

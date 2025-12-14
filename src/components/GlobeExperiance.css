@@ -14,7 +14,7 @@
     font-variant-numeric: lining-nums proportional-nums;
     font-style: normal;
     text-align: center;
-    text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
+    /* text-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25); */
     font-size: 56px;
     font-weight: 700;
     letter-spacing: -1.28px;
@@ -128,13 +128,13 @@
 .stage-3{
     position: absolute;
     left: 300px;
-    top: 430px
+    top: 410px
 }
 
 .stage-4{
     position: absolute;
     right: 250px;
-    top: 500px
+    top: 470px
 }
 
 .relative-wrap h4{
@@ -169,12 +169,20 @@
 }
 
 .month-track.animate {
-  transform: translateY(-1em);
+  transform: translateY(calc(-1em - 20px));
 }
 
-.month {
-  line-height: 1em;
+.month-track {
+  will-change: transform;
 }
+
+
+.month {
+  background: transparent !important; 
+  box-shadow: none !important;
+  text-shadow: none; 
+}
+
 
 @media (max-width: 1000px) {
     .globe-header-container h2 {

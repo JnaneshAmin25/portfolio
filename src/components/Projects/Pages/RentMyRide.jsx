@@ -64,6 +64,7 @@ function RentMyRide() {
   };
 
   return (
+    <>
     <motion.div 
          className="pages-container"
          initial="hidden"
@@ -183,9 +184,9 @@ function RentMyRide() {
           <img src={bento25} />
         </div>
       </div>
+      </motion.div>
       <OtherProjects currentProject="rentmyride" />
-
-    </motion.div>
+      </>
   );
 }
 

@@ -60,6 +60,7 @@ function WhatsApp() {
   };
 
   return (
+    <>
     <motion.div 
          className="pages-container"
          initial="hidden"
@@ -179,8 +180,10 @@ function WhatsApp() {
           <img src={bento24} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherProjects currentProject="whatsapp" />
-    </motion.div>
+      </>
   );
 }
 

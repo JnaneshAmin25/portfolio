@@ -77,6 +77,7 @@ function QEasy() {
     };
 
   return (
+    <>
     <motion.div 
       className="pages-container"
       initial="hidden"
@@ -663,8 +664,10 @@ function QEasy() {
           <img src={bento24} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherCaseStudies currentProject="qeasy" />
-    </motion.div>
+      </>
   );
 }
 

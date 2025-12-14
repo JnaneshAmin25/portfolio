@@ -59,6 +59,7 @@ function CanvasAndCode() {
       }
   };
   return (
+    <>
     <motion.div 
          className="pages-container"
          initial="hidden"
@@ -166,8 +167,10 @@ function CanvasAndCode() {
       <div className="project-second-banner">
         <img src={thirdbanner2} />
       </div>
+      
+      </motion.div>
       <OtherProjects currentProject="canvasandcode" />
-    </motion.div>
+    </>
   );
 }
 

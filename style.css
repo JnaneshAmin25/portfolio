@@ -1332,7 +1332,7 @@ header nav {
 .loop-inner-content {
   width: 100%;
   max-width: 1280px;
-  padding: 60px 150px;
+  padding: 60px 100px;
   margin: 0 auto;
   z-index: 10;
   opacity: 0;
@@ -3678,6 +3678,7 @@ footer.footer {
   height: 24px;
   flex-shrink: 0;
   aspect-ratio: 1/1;
+  z-index: 100;
 }
 
 .footer-socials a:hover svg path{

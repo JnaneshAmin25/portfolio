@@ -85,6 +85,7 @@ function GoogleClassroom() {
       };
 
   return (
+    <>
     <motion.div 
       className="pages-container"
       initial="hidden"
@@ -683,8 +684,10 @@ function GoogleClassroom() {
           <img src={bento26} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherCaseStudies currentProject="googleclassroom" />
-    </motion.div>
+      </>
   );
 }
 

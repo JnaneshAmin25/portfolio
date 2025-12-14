@@ -83,6 +83,7 @@ function KiteByZerodha() {
   };
   
   return (
+    <>
     <motion.div 
       className="pages-container"
       initial="hidden"
@@ -683,8 +684,10 @@ function KiteByZerodha() {
           <img src={bento27} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherCaseStudies currentProject="kite" />
-    </motion.div>
+      </>
   );
 }
 

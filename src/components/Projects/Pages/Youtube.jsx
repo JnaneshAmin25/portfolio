@@ -60,6 +60,7 @@ function Youtube() {
   };
 
   return (
+    <>
     <motion.div 
          className="pages-container"
          initial="hidden"
@@ -170,8 +171,10 @@ function Youtube() {
           <img src={bento22} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherProjects currentProject="youtube" />
-    </motion.div>
+      </>
   );
 }
 

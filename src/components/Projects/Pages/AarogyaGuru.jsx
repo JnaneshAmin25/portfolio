@@ -86,6 +86,7 @@ function AarogyaGuru() {
       }
     };
   return (
+    <>
     <motion.div 
       className="pages-container"
       initial="hidden"
@@ -682,8 +683,10 @@ function AarogyaGuru() {
           <img src={bento27} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherCaseStudies current="aarogyaguru" />
-    </motion.div>
+    </>
   );
 }
 

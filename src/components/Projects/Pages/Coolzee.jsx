@@ -64,6 +64,7 @@ function Coolzee() {
   };
 
   return (
+    <>
     <motion.div 
          className="pages-container"
          initial="hidden"
@@ -189,8 +190,10 @@ function Coolzee() {
           <img src={bento26} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherProjects currentProject="coolzee" />
-    </motion.div>
+      </>
   );
 }
 

@@ -82,6 +82,7 @@ function SchoolMate() {
     };
 
   return (
+    <>
     <motion.div className="pages-container" initial="hidden" animate="show" variants={containerVariants}>
       <BackgroundStars />
       <motion.div className="about-project" variants={itemVariants}>
@@ -669,8 +670,10 @@ function SchoolMate() {
           <img src={bento27} />
         </div>
       </div>
+      
+      </motion.div>
       <OtherCaseStudies currentProject="schoolmate" />
-    </motion.div>
+      </>
   );
 }
 

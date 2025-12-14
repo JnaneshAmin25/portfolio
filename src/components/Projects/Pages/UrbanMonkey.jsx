@@ -57,6 +57,7 @@ function UrbanMonkey() {
   };
   
   return (
+    <>
     <motion.div 
          className="pages-container"
          initial="hidden"
@@ -164,8 +165,10 @@ function UrbanMonkey() {
       <div className="project-second-banner">
         <img src={thirdbanner2} />
       </div>
+      
+      </motion.div>
       <OtherProjects currentProject="urbanmonkey" />
-    </motion.div>
+      </>
   );
 }
 

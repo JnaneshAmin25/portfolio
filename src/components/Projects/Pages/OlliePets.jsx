@@ -60,6 +60,7 @@ function OlliePets() {
   };
 
   return (
+    <>
    <motion.div 
          className="pages-container"
          initial="hidden"
@@ -167,8 +168,10 @@ function OlliePets() {
       <div className="project-second-banner">
         <img src={thirdbanner2} />
       </div>
+      
+      </motion.div>
       <OtherProjects currentProject="olliepets" />
-    </motion.div>
+      </>
   );
 }
 

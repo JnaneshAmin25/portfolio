@@ -81,6 +81,7 @@ function SaveLife() {
   };
 
   return (
+    <>
     <motion.div 
       className="pages-container"
       initial="hidden"
@@ -673,8 +674,9 @@ function SaveLife() {
         </div>
       </div>
       
+      </motion.div>
       <OtherCaseStudies currentProject="savelife" />
-    </motion.div>
+      </>
   );
 }
 

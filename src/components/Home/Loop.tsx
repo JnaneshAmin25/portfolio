@@ -23,7 +23,7 @@ const Loop = () => {
     { title: "Q Easy", subtitle: "Mobile Application, 2025", img: Qeasy },
     { title: "Arogya Guru", subtitle: "Mobile Application, 2025", img: Arogya },
     { title: "Kite By Zeroda", subtitle: "Mobile Application, 2023", img: Kite },
-    { title: "Google Classroom", subtitle: "Mobile Application, 2023", img: Classroom },
+    { title: "Classroom", subtitle: "Mobile Application, 2023", img: Classroom },
     { title: "Whatsapp", subtitle: "Mobile Application, 2023", img: Whatsapp },
     { title: "Youtube", subtitle: "Mobile Application, 2023", img: Youtube },
     { title: "Coolze", subtitle: "Mobile Application, 2023", img: Coolze },
@@ -152,7 +152,7 @@ const Loop = () => {
             <p className="scroll-text">
               Keep sliding.
               <br />
-              You never know what you'll discover next.
+              You never know <br/> what you'll discover next.
             </p>
           </div>
         </motion.div>
