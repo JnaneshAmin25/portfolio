@@ -151,7 +151,7 @@ const Loop = () => {
             <p className="scroll-text">
               Keep sliding.
               <br />
-              You never know <br/> what you'll discover next.
+              You never know <br className="desktop"/> what you'll discover next.
             </p>
           </div>
         </motion.div>
