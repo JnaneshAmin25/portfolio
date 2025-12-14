@@ -1934,8 +1934,9 @@ header nav {
     gap: 24px;
     position: sticky;
     background: #111111;
-    top: 64px;
+    top: calc(var(--navbar-visible, 1) * 64px);
     z-index: 100;
+    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .tab-item {

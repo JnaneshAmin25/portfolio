@@ -40,7 +40,12 @@ function Navbar() {
     };
   }, []);
 
-
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--navbar-visible', 
+      showNavbar ? '1' : '0'
+    );
+  }, [showNavbar]);
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen(!isMobileNavOpen);
@@ -54,7 +59,10 @@ function Navbar() {
   };
 
   return (
-    <header style={{ transform: showNavbar ? "translateY(0)" : "translateY(-120%)", transition: " all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",}}>
+     <header style={{ 
+      transform: showNavbar ? "translateY(0)" : "translateY(-120%)", 
+      transition: " all 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
+    }}>
       <section>
         <Link to="/" className="navbar-logo" onClick={handleLinkClick}>
           <p>Abhay Nayak</p>
