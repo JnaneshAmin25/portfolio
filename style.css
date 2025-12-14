@@ -293,7 +293,7 @@ header nav {
   gap: 18px;
 }
 
-.home-banner-container-main section p {
+/* .home-banner-container-main section p {
   max-width:800px;
   color: #c1c1c1;
   text-align: center;
@@ -304,7 +304,7 @@ header nav {
   line-height: normal;
   letter-spacing: -4%;
   z-index: 10;
-}
+} */
 
 .home-banner-scroll-text {
   width: 100%;
@@ -4124,7 +4124,7 @@ footer.footer {
     padding: 0 20px;
   }
 
-  .home-banner-container-main section p {
+  /* .home-banner-container-main section p {
     max-width: 600px;
     margin: auto;
     color: rgba(233, 232, 232, 0.74);
@@ -4135,7 +4135,7 @@ footer.footer {
     font-weight: 300;
     line-height: 90%; /* 21.6px */
     letter-spacing: -4%;
-  }
+  } */
 
   .home-banner-scroll-text {
     height: auto;
