@@ -296,7 +296,7 @@
 
     .stage-2{
         position: absolute;
-        left: 140px;
+        left: 120px;
         top: 140px
     }
 
@@ -310,6 +310,10 @@
         position: absolute;
         right: 150px;
         top: 380px
+    }
+
+    .month-track.animate {
+    transform: translateY(calc(-1em - 9.5px));
     }
 
 }

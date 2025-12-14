@@ -9,14 +9,6 @@ import URBANMoneky from "../../asset/Home/Marquee/URBAN Moneky.webp";
 import Youtube from "../../asset/Home/Marquee/Youtube.webp";
 
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.25 },
-  },
-};
-
 const item = {
   hidden: { opacity: 0, y: 20, filter: "blur(10px)" },
   show: {
@@ -35,23 +27,15 @@ function Marquee() {
         src={DesktopBackground}
         alt="Background"
       /> */}
-      <motion.div
-              className="heading"
-              variants={container}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false }}
-      >
-        <motion.h2
+      <motion.h2
         variants={item}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, }}
+        viewport={{ once: true, amount: 0.3 }}
         style={{ display: "inline-block" }}
       >
         Redesign Concepts
       </motion.h2>
-            </motion.div>
       <div className="home-marquee-container">
         <div className="marquee-wrapper">
           <div className="marquee-marquee">

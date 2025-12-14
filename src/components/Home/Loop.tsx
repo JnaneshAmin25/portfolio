@@ -32,7 +32,6 @@ const Loop = () => {
     { title: "Ollie pets", subtitle: "Website Design, 2023", img: OliePets },
   ];
 
-  /* 🔑 FIX: index + direction as one atomic state */
   const [[index, direction], setPage] = React.useState([0, 0]);
 
   const nextSlide = () => {
